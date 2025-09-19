@@ -1,0 +1,415 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="ECHO Digital - สะท้อนความสำเร็จ | Sales Page Design & SEO Thailand" 
+  description="ECHO Digital - บริการ Sales Page Design, SEO, Digital Marketing ที่สะท้อนความสำเร็จไปทั่วโลก เริ่มต้น 15,000 บาท"
+  keywords="Sales Page Design Thailand, SEO ราคาถูก, Digital Marketing Agency, ออกแบบหน้าขาย, ECHO Digital, สะท้อนความสำเร็จ"
+  canonical="https://echodigital.co.th"
+  ogImage="https://echodigital.co.th/og-home.jpg"
+>
+  <Navigation />
+  
+  <!-- Hero Section -->
+  <section class="relative bg-gradient-to-br from-primary-50 to-white overflow-hidden min-h-screen">
+    <!-- Echo Waves Background -->
+    <div class="absolute top-0 right-0 w-1/2 h-full">
+      <div class="absolute top-1/4 right-1/4 w-96 h-96 border-4 border-primary-200 rounded-full opacity-30 animate-pulse"></div>
+      <div class="absolute top-1/3 right-1/3 w-64 h-64 border-2 border-primary-300 rounded-full opacity-40"></div>
+      <div class="absolute top-2/5 right-2/5 w-32 h-32 border-2 border-primary-500 rounded-full opacity-60"></div>
+    </div>
+    
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-screen flex items-center">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center w-full">
+        
+        <!-- Left Content -->
+        <div class="order-2 lg:order-1">
+          <div class="w-20 h-20 mb-8 flex items-center justify-center relative">
+            <!-- Animated Echo Circles -->
+            <div class="absolute w-20 h-20 border-2 border-primary-400 rounded-full opacity-30 animate-ping"></div>
+            <div class="absolute w-12 h-12 border-2 border-primary-600 rounded-full opacity-50"></div>
+            <div class="w-6 h-6 bg-primary-600 rounded-full echo-glow"></div>
+          </div>
+          
+          <h1 class="text-6xl md:text-8xl font-heading font-semibold text-secondary-900 mb-6 leading-tight echo-heading">
+            ECHO<br>
+            <span class="heading-gradient text-7xl md:text-9xl font-medium">DIGITAL</span>
+          </h1>
+          
+          <div class="w-32 h-2 bg-primary-600 mb-8 echo-line"></div>
+          
+          <p class="text-xl text-secondary-700 mb-8 font-echo leading-relaxed max-w-lg">
+            สะท้อนความสำเร็จไปทั่วโลก<br>
+            เริ่มจากคลื่นเดียว สร้างผลกระทบที่ยั่งยืน
+          </p>
+          
+          <div class="flex flex-col sm:flex-row gap-6 mb-12">
+            <a href="/contact" class="bg-primary-600 text-white px-10 py-4 rounded-full font-medium text-lg echo-glow hover:bg-primary-700 transition-all duration-300 font-echo tracking-wide inline-flex items-center justify-center">
+              เริ่มต้นโปรเจกต์
+              <svg class="w-5 h-5 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+              </svg>
+            </a>
+            
+            <a href="/portfolio" class="border-2 border-primary-600 text-primary-600 px-10 py-4 rounded-full font-medium text-lg hover:bg-primary-600 hover:text-white transition-all duration-300 font-echo tracking-wide inline-flex items-center justify-center wave-border">
+              ดูผลงาน
+            </a>
+          </div>
+          
+          <!-- Stats -->
+          <div class="grid grid-cols-3 gap-8">
+            <div class="text-center">
+              <div class="w-12 h-12 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-3 echo-glow">
+                <span class="text-white font-bold font-echo">3x</span>
+              </div>
+              <div class="text-2xl font-bold text-primary-600 font-heading">300%</div>
+              <div class="text-sm text-secondary-600 font-echo">เพิ่มยอดขาย</div>
+            </div>
+            <div class="text-center">
+              <div class="w-12 h-12 bg-secondary-600 rounded-full flex items-center justify-center mx-auto mb-3 minimal-shadow">
+                <span class="text-white font-bold font-echo">7</span>
+              </div>
+              <div class="text-2xl font-bold text-primary-600 font-heading">7 วัน</div>
+              <div class="text-sm text-secondary-600 font-echo">ส่งมอบเร็ว</div>
+            </div>
+            <div class="text-center">
+              <div class="w-12 h-12 bg-accent-600 rounded-full flex items-center justify-center mx-auto mb-3 minimal-shadow">
+                <span class="text-white font-bold font-echo">2k</span>
+              </div>
+              <div class="text-2xl font-bold text-primary-600 font-heading">200+</div>
+              <div class="text-sm text-secondary-600 font-echo">โปรเจกต์</div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Right Visual -->
+        <div class="order-1 lg:order-2 relative">
+          <div class="relative">
+            <!-- Large Dot Visual -->
+            <div class="w-80 h-80 md:w-96 md:h-96 mx-auto relative flex items-center justify-center">
+              <!-- Main Large Dot -->
+              <div class="w-64 h-64 md:w-80 md:h-80 bg-primary-600 rounded-full flex items-center justify-center minimal-shadow relative">
+                <div class="w-32 h-32 md:w-40 md:h-40 bg-white rounded-full flex items-center justify-center">
+                  <div class="text-center">
+                    <div class="text-3xl md:text-4xl font-brand font-bold text-primary-600 mb-2 dot-brand">DOT</div>
+                    <div class="text-xs text-secondary-600 font-sans">จุดเริ่มต้น</div>
+                  </div>
+                </div>
+                
+                <!-- Small dots on the edge -->
+                <div class="absolute top-8 w-4 h-4 bg-white rounded-full"></div>
+                <div class="absolute right-8 w-3 h-3 bg-white rounded-full"></div>
+                <div class="absolute bottom-8 w-2 h-2 bg-white rounded-full"></div>
+                <div class="absolute left-8 w-3 h-3 bg-white rounded-full"></div>
+              </div>
+              
+              <!-- Floating Dots -->
+              <div class="absolute top-4 right-12 w-6 h-6 bg-primary-600 rounded-full opacity-60"></div>
+              <div class="absolute bottom-8 left-8 w-8 h-8 bg-primary-600 rounded-full opacity-40"></div>
+              <div class="absolute top-1/2 left-0 w-4 h-4 bg-primary-600 rounded-full opacity-70"></div>
+              <div class="absolute bottom-4 right-20 w-3 h-3 bg-primary-600 rounded-full"></div>
+              <div class="absolute top-16 left-16 w-2 h-2 bg-primary-600 rounded-full opacity-50"></div>
+            </div>
+            
+            <!-- Additional decorative elements -->
+            <div class="absolute -top-8 -left-8 w-16 h-16 border-2 border-primary-600 rounded-full opacity-30"></div>
+            <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-primary-600 rounded-full opacity-10"></div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    
+    <!-- Scroll Indicator -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+      <div class="flex flex-col items-center text-secondary-600">
+        <div class="text-xs font-zen mb-2">เลื่อนลงเพื่อดูเพิ่มเติม</div>
+        <div class="w-px h-8 bg-primary-600 opacity-50"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-32 bg-secondary-50 relative overflow-hidden">
+    <!-- Background Geometric Shape -->
+    <div class="absolute top-0 left-0 w-1/3 h-full bg-primary-600 opacity-5 transform -skew-x-12"></div>
+    <div class="absolute bottom-0 right-0 w-64 h-64 bg-primary-600 rounded-full opacity-10"></div>
+    
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Section Header - Left Aligned -->
+      <div class="max-w-2xl mb-20">
+        <div class="w-16 h-1 bg-primary-600 mb-6"></div>
+        <h2 class="text-4xl md:text-5xl zen-heading font-bold text-secondary-900 mb-6 leading-tight">
+          สาม<br>
+          <span class="heading-gradient">หลักการแห่งเซน</span>
+        </h2>
+        <p class="text-xl text-secondary-700 font-zen leading-relaxed">
+          ความเรียบง่ายที่ซ่อนความลึกซึ้ง<br>
+          เทคนิคที่ให้ผลลัพธ์เหนือคาดหมาย
+        </p>
+      </div>
+      
+      <!-- Asymmetrical Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        
+        <!-- Large Feature Card -->
+        <div class="lg:col-span-7 bg-white rounded-3xl p-12 minimal-shadow">
+          <div class="flex items-start space-x-6">
+            <div class="w-20 h-20 zen-circle flex-shrink-0 flex items-center justify-center">
+              <div class="w-8 h-8 bg-white rounded-full"></div>
+            </div>
+            <div>
+              <h3 class="text-3xl zen-heading font-bold text-secondary-900 mb-4">เพิ่มยอดขาย 300%</h3>
+              <p class="text-lg text-secondary-700 font-zen leading-relaxed mb-6">
+                หน้าขายที่สร้างด้วยปรัชญาเซน เรียบง่ายแต่แรงบันดาลใจ เพิ่มอัตราการแปลงอย่างมีนัยสำคัญ 
+                ด้วยการใช้ negative space และ typography ที่มีพลัง
+              </p>
+              <div class="flex items-center space-x-4">
+                <div class="text-2xl font-bold text-primary-600 zen-heading">300%</div>
+                <div class="w-1 h-8 bg-primary-600 opacity-30"></div>
+                <div class="text-sm text-secondary-600 font-zen">เพิ่มขึ้นเฉลี่ย</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Two Smaller Cards -->
+        <div class="lg:col-span-5 space-y-8">
+          <div class="bg-white rounded-3xl p-8 minimal-shadow">
+            <div class="w-16 h-16 zen-circle mb-6 flex items-center justify-center">
+              <div class="w-6 h-6 bg-white rounded-full"></div>
+            </div>
+            <h3 class="text-xl zen-heading font-semibold text-secondary-900 mb-4">SEO อันดับหนึ่ง</h3>
+            <p class="text-secondary-700 font-zen leading-relaxed">
+              ด้วยความแม่นยำและความเรียบง่าย เราวางเว็บไซต์ของคุณไว้ที่ตำแหน่งที่สมควร
+            </p>
+          </div>
+          
+          <div class="bg-primary-600 rounded-3xl p-8 text-white">
+            <div class="w-16 h-16 bg-white bg-opacity-20 rounded-full mb-6 flex items-center justify-center">
+              <div class="w-6 h-6 bg-white rounded-full"></div>
+            </div>
+            <h3 class="text-xl zen-heading font-semibold mb-4">ส่งมอบรวดเร็ว</h3>
+            <p class="text-red-100 font-zen leading-relaxed">
+              ขั้นตอนที่เรียบง่ายและมีประสิทธิภาพ ส่งมอบผลงานคุณภาพสูงตรงเวลาเสมอ
+            </p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Preview -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-heading font-bold text-gray-900 mb-4">
+          บริการของเรา
+        </h2>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+          บริการครบวงจรสำหรับการตลาดดิจิทัลที่ช่วยยกระดับธุรกิจของคุณ
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+          <div class="flex items-center mb-6">
+            <div class="w-12 h-12 bg-gradient-to-r from-primary-600 to-accent-600 rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-heading font-semibold text-gray-900 ml-4">Sales Page Design</h3>
+          </div>
+          <p class="text-gray-600 mb-6">
+            ออกแบบหน้าขายที่มีอัตราการแปลงสูง ด้วยจิตวิทยาการขายและ UX Design ที่ทันสมัย
+          </p>
+          <ul class="space-y-2 text-gray-600 mb-6">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              การวิเคราะห์กลุ่มเป้าหมาย
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              Copywriting ที่ขายได้
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              A/B Testing
+            </li>
+          </ul>
+          <a href="/services" class="text-primary-600 font-semibold hover:text-primary-700 transition-colors">
+            เรียนรู้เพิ่มเติม →
+          </a>
+        </div>
+        
+        <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+          <div class="flex items-center mb-6">
+            <div class="w-12 h-12 bg-gradient-to-r from-accent-600 to-primary-600 rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-heading font-semibold text-gray-900 ml-4">SEO Optimization</h3>
+          </div>
+          <p class="text-gray-600 mb-6">
+            ปรับปรุงเว็บไซต์ให้ติดอันดับแรกใน Google ด้วยเทคนิค SEO ที่ได้ผลจริง
+          </p>
+          <ul class="space-y-2 text-gray-600 mb-6">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              Keyword Research
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              Technical SEO
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              Link Building
+            </li>
+          </ul>
+          <a href="/services" class="text-primary-600 font-semibold hover:text-primary-700 transition-colors">
+            เรียนรู้เพิ่มเติม →
+          </a>
+        </div>
+
+        <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+          <div class="flex items-center mb-6">
+            <div class="w-12 h-12 bg-gradient-to-r from-accent-600 to-secondary-600 rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-heading font-semibold text-gray-900 ml-4">Company Profile</h3>
+          </div>
+          <p class="text-gray-600 mb-6">
+            เว็บไซต์บริษัทที่สร้างความน่าเชื่อถือ ดูมืออาชีพ เพิ่มความไว้วางใจให้กับลูกค้า
+          </p>
+          <ul class="space-y-2 text-gray-600 mb-6">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              ระบบจัดการเนื้อหา (CMS)
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              Responsive Design
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              SEO พื้นฐาน
+            </li>
+          </ul>
+          <a href="/services" class="text-primary-600 font-semibold hover:text-primary-700 transition-colors">
+            เรียนรู้เพิ่มเติม →
+          </a>
+        </div>
+
+        <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
+          <div class="flex items-center mb-6">
+            <div class="w-12 h-12 bg-gradient-to-r from-primary-600 to-accent-600 rounded-lg flex items-center justify-center">
+              <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.293 2.293A1 1 0 005 16h16M7 13v6a2 2 0 002 2h6a2 2 0 002-2v-6"/>
+              </svg>
+            </div>
+            <h3 class="text-2xl font-heading font-semibold text-gray-900 ml-4">E-commerce</h3>
+          </div>
+          <p class="text-gray-600 mb-6">
+            ร้านค้าออนไลน์ครบครัน ระบบชำระเงิน จัดการสินค้า รายงานยอดขาย พร้อมขายทันที
+          </p>
+          <ul class="space-y-2 text-gray-600 mb-6">
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              ระบบจัดการสินค้า
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              ระบบชำระเงิน
+            </li>
+            <li class="flex items-center">
+              <svg class="w-5 h-5 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+              รายงานยอดขาย
+            </li>
+          </ul>
+          <a href="/services" class="text-primary-600 font-semibold hover:text-primary-700 transition-colors">
+            เรียนรู้เพิ่มเติม →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-20 bg-primary-600 relative overflow-hidden">
+    <div class="absolute inset-0 bg-zen-pattern opacity-5"></div>
+    <!-- Decorative Circles -->
+    <div class="absolute top-10 left-10 w-32 h-32 bg-white rounded-full opacity-5"></div>
+    <div class="absolute top-20 right-20 w-16 h-16 bg-white rounded-full opacity-10"></div>
+    <div class="absolute bottom-10 left-1/4 w-24 h-24 bg-white rounded-full opacity-5"></div>
+    <div class="absolute bottom-20 right-10 w-40 h-40 bg-white rounded-full opacity-5"></div>
+    
+    <div class="relative max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+      <div class="zen-line border-white mb-8"></div>
+      
+      <h2 class="text-3xl md:text-4xl zen-heading font-bold text-white mb-6">
+        พร้อมเริ่มต้นการเดินทางแล้วหรือยัง?
+      </h2>
+      
+      <p class="text-xl text-red-100 mb-8 font-zen leading-relaxed">
+        ปรึกษาฟรี! เราจะวิเคราะห์ธุรกิจของคุณ<br>
+        และออกแบบเส้นทางที่เรียบง่ายแต่มีประสิทธิภาพ
+      </p>
+      
+      <div class="flex items-center justify-center mb-8">
+        <div class="w-3 h-3 bg-white rounded-full mx-2"></div>
+        <div class="w-3 h-3 bg-white rounded-full mx-2"></div>
+        <div class="w-3 h-3 bg-white rounded-full mx-2"></div>
+      </div>
+      
+      <a href="/contact" class="bg-white text-primary-700 px-8 py-4 rounded-full font-semibold text-lg minimal-shadow hover:shadow-xl transition-all duration-300 inline-block zen-heading">
+        เริ่มการปรึกษาฟรี
+      </a>
+      
+      <div class="mt-8 text-sm text-red-100 font-zen">
+        「การเดินทางพันไมล์เริ่มต้นด้วยก้าวแรก」
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
+
+<style>
+  .bg-grid-pattern {
+    background-image: radial-gradient(circle, #e5e7eb 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+</style>

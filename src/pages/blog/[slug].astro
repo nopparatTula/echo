@@ -1,0 +1,417 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Navigation from "../../components/Navigation.astro";
+import Footer from "../../components/Footer.astro";
+
+export async function getStaticPaths() {
+  return [
+    {
+      params: { slug: "landing-page-conversion-techniques" },
+    },
+    {
+      params: { slug: "seo-ranking-google-2024" },
+    },
+    {
+      params: { slug: "content-marketing-sales-strategy" },
+    },
+    {
+      params: { slug: "sales-page-design-2024" },
+    },
+  ];
+}
+
+const { slug } = Astro.params;
+
+// Mock data - ในการใช้งานจริงจะดึงจาก Strapi API
+const blogPosts = {
+  "landing-page-conversion-techniques": {
+    id: 1,
+    title: "10 เทคนิคสร้าง Landing Page ที่แปลงยอดขายได้จริง",
+    slug: "landing-page-conversion-techniques",
+    excerpt:
+      "เรียนรู้เทคนิคการสร้าง Landing Page ที่มีประสิทธิภาพสูง ช่วยเพิ่มอัตราการแปลงยอดขายได้มากถึง 300%",
+    content: `
+      <h2>การสร้าง Landing Page ที่แปลงยอดขายได้จริง</h2>
+      
+      <p>Landing Page ที่ดีคือหัวใจสำคัญของการตลาดดิจิทัล หากคุณสามารถสร้าง Landing Page ที่มีประสิทธิภาพได้ ยอดขายของคุณจะเพิ่มขึ้นอย่างมาก</p>
+      
+      <h3>1. หัวข้อที่ดึงดูดใจ (Compelling Headline)</h3>
+      <p>หัวข้อเป็นสิ่งแรกที่ผู้เยียมชมเห็น จึงต้องสร้างความประทับใจและสื่อสารคุณค่าได้ทันที</p>
+      
+      <h3>2. เนื้อหาที่ตอบโจทย์ปัญหา</h3>
+      <p>ผู้คนจะซื้อสินค้าหรือบริการเมื่อมันสามารถแก้ปัญหาของพวกเขาได้ การนำเสนอเนื้อหาที่เข้าใจปัญหาและให้โซลูชั่นที่ชัดเจนจึงเป็นสิ่งสำคัญ</p>
+      
+      <h3>3. Social Proof และ Testimonials</h3>
+      <p>ความเชื่อมั่นเกิดจากการได้เห็นว่าคนอื่นใช้แล้วได้ผล การแสดง testimonials, รีวิว และสถิติความสำเร็จจะช่วยเพิ่มความน่าเชื่อถือ</p>
+      
+      <h3>4. Call-to-Action ที่ชัดเจน</h3>
+      <p>ปุ่ม CTA ต้องโดดเด่น ใช้คำที่กระตุ้นการกระทำ และวางในตำแหน่งที่เหมาะสม</p>
+      
+      <h3>5. การออกแบบที่ responsive</h3>
+      <p>ในยุคที่คนใช้มือถือมากขึ้น Landing Page ต้องแสดงผลได้ดีในทุกอุปกรณ์</p>
+      
+      <h2>เคล็ดลับเพิ่มเติม</h2>
+      <ul>
+        <li>ใช้สีที่สร้างอารมณ์เหมาะสมกับแบรนด์</li>
+        <li>เพิ่มความเร่งด่วน (Urgency) อย่างเหมาะสม</li>
+        <li>ทดสอบ A/B Testing เพื่อหาเวอร์ชันที่ดีที่สุด</li>
+        <li>โหลดเร็วและใช้งานง่าย</li>
+      </ul>
+      
+      <h2>สรุป</h2>
+      <p>การสร้าง Landing Page ที่แปลงยอดขายได้จริงต้องใช้การผสมผสานระหว่างศิลปะและวิทยาศาสตร์ ตั้งแต่การเข้าใจผู้ใช้ การออกแบบที่ดึงดูดใจ ไปจนถึงการทดสอบและปรับปรุงอย่างต่อเนื่อง</p>
+    `,
+    published_at: "2024-01-15T10:00:00.000Z",
+    category: {
+      name: "Digital Marketing",
+      slug: "digital-marketing",
+      color: "#3B82F6",
+    },
+    tags: [
+      { name: "Landing Page", slug: "landing-page" },
+      { name: "Conversion", slug: "conversion" },
+      { name: "CRO", slug: "cro" },
+    ],
+    featured_image: "/images/blog/landing-page-tips.jpg",
+    author: "อาร์ม กิตติศักดิ์",
+    seo_title: "10 เทคนิคสร้าง Landing Page ที่แปลงยอดขายได้จริง",
+    seo_description:
+      "เรียนรู้เทคนิคการสร้าง Landing Page ที่มีประสิทธิภาพสูง ช่วยเพิ่มอัตราการแปลงยอดขายได้มากถึง 300%",
+  },
+  "seo-ranking-google-2024": {
+    id: 2,
+    title: "วิธีทำ SEO ให้ติดอันดับ 1 ใน Google 2024",
+    slug: "seo-ranking-google-2024",
+    excerpt:
+      "อัปเดตเทคนิค SEO ล่าสุดสำหรับปี 2024 ที่จะช่วยให้เว็บไซต์ของคุณติดอันดับแรกใน Google",
+    content: `
+      <h2>เทคนิค SEO ที่ต้องรู้ในปี 2024</h2>
+      
+      <p>การทำ SEO ในปี 2024 มีความซับซ้อนมากขึ้น แต่หากคุณรู้เทคนิคที่ถูกต้อง คุณสามารถทำให้เว็บไซต์ติดอันดับแรกได้</p>
+      
+      <h3>1. Core Web Vitals</h3>
+      <p>Google ให้ความสำคัญกับประสบการณ์ผู้ใช้มากขึ้น โดยเฉพาะ:</p>
+      <ul>
+        <li>Largest Contentful Paint (LCP) - ควรต่ำกว่า 2.5 วินาที</li>
+        <li>First Input Delay (FID) - ควรต่ำกว่า 100 มิลลิวินาที</li>
+        <li>Cumulative Layout Shift (CLS) - ควรต่ำกว่า 0.1</li>
+      </ul>
+      
+      <h3>2. E-A-T (Expertise, Authoritativeness, Trustworthiness)</h3>
+      <p>Google ต้องการเนื้อหาที่มีคุณภาพจากผู้เชี่ยวชาญ ดังนั้นการสร้างเนื้อหาที่แสดงความเชี่ยวชาญจึงสำคัญ</p>
+      
+      <h3>3. Mobile-First Indexing</h3>
+      <p>Google ใช้เวอร์ชันมือถือเป็นหลักในการจัดอันดับ ดังนั้นเว็บไซต์ต้องทำงานได้ดีบนมือถือ</p>
+    `,
+    published_at: "2024-01-10T14:30:00.000Z",
+    category: { name: "SEO Tips", slug: "seo-tips", color: "#10B981" },
+    tags: [
+      { name: "SEO", slug: "seo" },
+      { name: "Google Ranking", slug: "google-ranking" },
+      { name: "Core Web Vitals", slug: "core-web-vitals" },
+    ],
+    featured_image: "/images/blog/seo-2024.jpg",
+    author: "นิน สุภาพร",
+    seo_title: "วิธีทำ SEO ให้ติดอันดับ 1 ใน Google 2024",
+    seo_description:
+      "อัปเดตเทคนิค SEO ล่าสุดสำหรับปี 2024 ที่จะช่วยให้เว็บไซต์ของคุณติดอันดับแรกใน Google",
+  },
+  "content-marketing-sales-strategy": {
+    id: 3,
+    title: "กลยุทธ์ Content Marketing ที่ช่วยเพิ่มยอดขาย",
+    slug: "content-marketing-sales-strategy",
+    excerpt:
+      "เทคนิคการสร้างเนื้อหาที่ไม่เพียงแค่ดึงดูดผู้อ่าน แต่ยังสามารถขายสินค้าและบริการได้อย่างมีประสิทธิภาพ",
+    content: `
+      <h2>Content Marketing ที่ขายได้</h2>
+      <p>Content Marketing ไม่ใช่แค่การสร้างเนื้อหาให้คนอ่าน แต่เป็นกลยุทธ์ที่จะช่วยเพิ่มยอดขายให้กับธุรกิจ</p>
+    `,
+    published_at: "2024-01-05T14:30:00.000Z",
+    category: {
+      name: "Sales Strategy",
+      slug: "sales-strategy",
+      color: "#8B5CF6",
+    },
+    tags: [
+      { name: "Content Marketing", slug: "content-marketing" },
+      { name: "Sales", slug: "sales" },
+    ],
+    featured_image: "/images/blog/content-marketing.jpg",
+    author: "ปิง วรินดา",
+    seo_title: "กลยุทธ์ Content Marketing ที่ช่วยเพิ่มยอดขาย",
+    seo_description:
+      "เทคนิคการสร้างเนื้อหาที่ไม่เพียงแค่ดึงดูดผู้อ่าน แต่ยังสามารถขายสินค้าและบริการได้อย่างมีประสิทธิภาพ",
+  },
+  "sales-page-design-2024": {
+    id: 4,
+    title: "การออกแบบ Sales Page ที่ขายได้ในยุค 2024",
+    slug: "sales-page-design-2024",
+    excerpt:
+      "หลักการออกแบบ Sales Page ที่ทันสมัย เน้นประสบการณ์ผู้ใช้และการแปลงยอดขายสูงสุด",
+    content: `
+      <h2>Sales Page Design ยุค 2024</h2>
+      <p>การออกแบบ Sales Page ในยุค 2024 ต้องคำนึงถึงประสบการณ์ผู้ใช้เป็นหลัก</p>
+    `,
+    published_at: "2024-01-01T14:30:00.000Z",
+    category: { name: "Web Design", slug: "web-design", color: "#F59E0B" },
+    tags: [
+      { name: "Sales Page", slug: "sales-page" },
+      { name: "Web Design", slug: "web-design" },
+    ],
+    featured_image: "/images/blog/sales-page-design.jpg",
+    author: "อาร์ม กิตติศักดิ์",
+    seo_title: "การออกแบบ Sales Page ที่ขายได้ในยุค 2024",
+    seo_description:
+      "หลักการออกแบบ Sales Page ที่ทันสมัย เน้นประสบการณ์ผู้ใช้และการแปลงยอดขายสูงสุด",
+  },
+};
+
+const post = blogPosts[slug as keyof typeof blogPosts];
+
+if (!post) {
+  return new Response(null, {
+    status: 404,
+    statusText: "Not found",
+  });
+}
+
+// Related posts (mock data)
+const relatedPosts = [
+  {
+    title: "5 ความผิดพลาดใน Landing Page ที่ทำให้เสียลูกค้า",
+    slug: "landing-page-mistakes",
+    category: { name: "Digital Marketing", color: "#3B82F6" },
+  },
+  {
+    title: "Copywriting Formula ที่ขายได้จริง",
+    slug: "copywriting-formulas",
+    category: { name: "Sales Strategy", color: "#8B5CF6" },
+  },
+  {
+    title: "วิธีเพิ่มความเร็วเว็บไซต์สำหรับ SEO",
+    slug: "website-speed-seo",
+    category: { name: "SEO Tips", color: "#10B981" },
+  },
+];
+---
+
+<Layout
+  title={post.seo_title || post.title}
+  description={post.seo_description || post.excerpt}
+>
+  <Navigation />
+
+  <!-- Article Header -->
+  <article
+    class="pt-20 pb-10 bg-gradient-to-br from-blue-50 via-white to-purple-50"
+  >
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Breadcrumb -->
+      <nav class="mb-8">
+        <ol class="flex items-center space-x-2 text-sm text-gray-500">
+          <li><a href="/" class="hover:text-blue-600">หน้าหลัก</a></li>
+          <li>
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+              <path
+                fill-rule="evenodd"
+                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </li>
+          <li><a href="/blog" class="hover:text-blue-600">Blog</a></li>
+          <li>
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+              <path
+                fill-rule="evenodd"
+                d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </li>
+          <li class="text-gray-900 font-medium">บทความปัจจุบัน</li>
+        </ol>
+      </nav>
+
+      <!-- Category -->
+      <div class="mb-4">
+        <span
+          class="px-4 py-2 text-sm font-medium rounded-full"
+          style={`background-color: ${post.category.color}20; color: ${post.category.color}`}
+        >
+          {post.category.name}
+        </span>
+      </div>
+
+      <!-- Title -->
+      <h1
+        class="text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-gray-900 mb-6 leading-tight"
+      >
+        {post.title}
+      </h1>
+
+      <!-- Meta Info -->
+      <div class="flex flex-wrap items-center gap-6 text-gray-600 mb-8">
+        <div class="flex items-center">
+          <div
+            class="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center mr-3"
+          >
+            <span class="text-white font-medium">
+              {post.author.charAt(0)}
+            </span>
+          </div>
+          <span class="font-medium">{post.author}</span>
+        </div>
+
+        <div class="flex items-center">
+          <svg
+            class="w-5 h-5 mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+            ></path>
+          </svg>
+          <time>
+            {
+              new Date(post.published_at).toLocaleDateString("th-TH", {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              })
+            }
+          </time>
+        </div>
+
+        <div class="flex items-center">
+          <svg
+            class="w-5 h-5 mr-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+          <span>5 นาที</span>
+        </div>
+      </div>
+
+      <!-- Tags -->
+      <div class="flex flex-wrap gap-2 mb-8">
+        {
+          post.tags.map((tag) => (
+            <span class="px-3 py-1 text-sm bg-gray-100 text-gray-600 rounded-full">
+              #{tag.name}
+            </span>
+          ))
+        }
+      </div>
+    </div>
+  </article>
+
+  <!-- Featured Image -->
+  <section class="bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div
+        class="aspect-video bg-gradient-to-br from-blue-100 to-purple-100 rounded-xl flex items-center justify-center mb-12"
+      >
+        <div class="text-center">
+          <svg
+            class="w-20 h-20 text-gray-400 mx-auto mb-4"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+            ></path>
+          </svg>
+          <p class="text-gray-500">Featured Image สำหรับบทความ</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Article Content -->
+  <section class="pb-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div
+        class="prose prose-lg max-w-none prose-headings:font-heading prose-headings:text-gray-900 prose-p:text-gray-700 prose-a:text-blue-600 prose-strong:text-gray-900 prose-ul:text-gray-700 prose-ol:text-gray-700"
+      >
+        <Fragment set:html={post.content} />
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Posts -->
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2
+        class="text-3xl font-heading font-bold text-gray-900 mb-8 text-center"
+      >
+        บทความที่เกี่ยวข้อง
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {
+          relatedPosts.map((relatedPost) => (
+            <article class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden">
+              <div class="aspect-video bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center">
+                <svg
+                  class="w-12 h-12 text-gray-400"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  />
+                </svg>
+              </div>
+
+              <div class="p-6">
+                <span
+                  class="px-3 py-1 text-sm font-medium rounded-full mb-3 inline-block"
+                  style={`background-color: ${relatedPost.category.color}20; color: ${relatedPost.category.color}`}
+                >
+                  {relatedPost.category.name}
+                </span>
+
+                <h3 class="text-xl font-heading font-semibold text-gray-900 mb-4">
+                  <a
+                    href={`/blog/${relatedPost.slug}`}
+                    class="hover:text-blue-600 transition-colors"
+                  >
+                    {relatedPost.title}
+                  </a>
+                </h3>
+
+                <a
+                  href={`/blog/${relatedPost.slug}`}
+                  class="text-blue-600 hover:text-blue-700 font-medium text-sm transition-colors"
+                >
+                  อ่านต่อ →
+                </a>
+              </div>
+            </article>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>

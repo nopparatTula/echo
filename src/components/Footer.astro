@@ -1,0 +1,95 @@
+---
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-secondary-900 text-white relative overflow-hidden">
+  <!-- Background Dots -->
+  <div class="absolute top-0 left-0 w-full h-full opacity-5">
+    <div class="absolute top-8 left-8 w-4 h-4 bg-white rounded-full"></div>
+    <div class="absolute top-20 right-16 w-6 h-6 bg-white rounded-full"></div>
+    <div class="absolute bottom-16 left-1/4 w-3 h-3 bg-white rounded-full"></div>
+    <div class="absolute bottom-8 right-8 w-5 h-5 bg-white rounded-full"></div>
+  </div>
+  
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+      <!-- Company Info -->
+      <div class="md:col-span-2">
+        <div class="flex items-center mb-6">
+          <div class="w-12 h-12 bg-primary-600 rounded-full flex items-center justify-center minimal-shadow">
+          </div>
+          <span class="ml-4 text-2xl font-brand font-bold dot-brand">DOT</span>
+        </div>
+        <p class="text-gray-300 mb-6 max-w-md font-sans leading-relaxed">
+          จุดเริ่มต้นทุกความสำเร็จ เราเชี่ยวชาญด้าน Sales Page และ SEO 
+          ด้วยความเรียบง่ายที่ให้ผลลัพธ์เหนือความคาดหมาย
+        </p>
+        <div class="flex space-x-4">
+          <a href="#" class="w-10 h-10 bg-primary-600 rounded-full flex items-center justify-center text-white hover:bg-primary-700 transition-colors">
+            <span class="sr-only">Facebook</span>
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+              <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+            </svg>
+          </a>
+          <a href="#" class="w-10 h-10 bg-primary-600 rounded-full flex items-center justify-center text-white hover:bg-primary-700 transition-colors">
+            <span class="sr-only">Line</span>
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.282.628-.629.628M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.070 9.436-6.975C23.176 14.393 24 12.458 24 10.314"/>
+            </svg>
+          </a>
+          <a href="#" class="w-10 h-10 bg-primary-600 rounded-full flex items-center justify-center text-white hover:bg-primary-700 transition-colors">
+            <span class="sr-only">Instagram</span>
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+              <path fill-rule="evenodd" d="M12.017 0C8.396 0 7.989.013 7.041.072 6.094.131 5.458.333 4.898.63c-.58.311-1.08.66-1.474 1.056-.395.395-.744.894-1.056 1.474-.297.56-.499 1.196-.558 2.143-.059.948-.072 1.355-.072 4.976v.448c0 3.621.013 4.028.072 4.976.059.947.261 1.583.558 2.143.311.58.661 1.079 1.056 1.474.395.394.894.743 1.474 1.056.56.296 1.196.499 2.143.558.948.059 1.355.072 4.976.072h.448c3.621 0 4.028-.013 4.976-.072.947-.059 1.583-.262 2.143-.558.58-.313 1.079-.662 1.474-1.056.394-.395.743-.894 1.056-1.474.296-.56.499-1.196.558-2.143.059-.948.072-1.355.072-4.976v-.448c0-3.621-.013-4.028-.072-4.976-.059-.947-.262-1.583-.558-2.143-.313-.58-.662-1.079-1.056-1.474C20.11 1.347 19.611.998 19.031.687c-.56-.297-1.196-.499-2.143-.558C15.94.013 15.533 0 11.912 0h.105zm-.105 1.077c3.637 0 4.065.01 5.005.07.908.042 1.402.194 1.732.322.436.169.744.373 1.071.7.326.326.531.635.7 1.071.128.33.28.824.322 1.732.06.94.07 1.368.07 5.005 0 3.637-.01 4.065-.07 5.005-.042.908-.194 1.402-.322 1.732-.169.436-.374.744-.7 1.071-.327.326-.635.531-1.071.7-.33.128-.824.28-1.732.322-.94.06-1.368.07-5.005.07-3.637 0-4.065-.01-5.005-.07-.908-.042-1.402-.194-1.732-.322-.436-.169-.744-.374-1.071-.7-.326-.327-.531-.635-.7-1.071-.128-.33-.28-.824-.322-1.732-.06-.94-.07-1.368-.07-5.005 0-3.637.01-4.065.07-5.005.042-.908.194-1.402.322-1.732.169-.436.374-.744.7-1.071.327-.326.635-.531 1.071-.7.33-.128.824-.28 1.732-.322.94-.06 1.368-.07 5.005-.07z" clip-rule="evenodd" />
+              <path fill-rule="evenodd" d="M12 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Quick Links -->
+      <div>
+        <div class="flex items-center mb-4">
+          <div class="w-3 h-3 bg-primary-600 rounded-full mr-3"></div>
+          <h3 class="text-lg font-heading font-semibold">ลิงก์ด่วน</h3>
+        </div>
+        <ul class="space-y-3">
+          <li><a href="/services" class="text-gray-300 hover:text-primary-400 transition-colors font-sans">บริการของเรา</a></li>
+          <li><a href="/portfolio" class="text-gray-300 hover:text-primary-400 transition-colors font-sans">ผลงาน</a></li>
+          <li><a href="/blog" class="text-gray-300 hover:text-primary-400 transition-colors font-sans">บทความ</a></li>
+          <li><a href="/about" class="text-gray-300 hover:text-primary-400 transition-colors font-sans">เกี่ยวกับเรา</a></li>
+        </ul>
+      </div>
+      
+      <!-- Services -->
+      <div>
+        <div class="flex items-center mb-4">
+          <div class="w-3 h-3 bg-primary-600 rounded-full mr-3"></div>
+          <h3 class="text-lg font-heading font-semibold">บริการ</h3>
+        </div>
+        <ul class="space-y-3">
+          <li><a href="/services" class="text-gray-300 hover:text-primary-400 transition-colors font-sans">Sales Page Design</a></li>
+          <li><a href="/services" class="text-gray-300 hover:text-primary-400 transition-colors font-sans">SEO Optimization</a></li>
+          <li><a href="/services" class="text-gray-300 hover:text-primary-400 transition-colors font-sans">Content Marketing</a></li>
+          <li><a href="/services" class="text-gray-300 hover:text-primary-400 transition-colors font-sans">Digital Consulting</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Bottom Bar -->
+    <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+      <p class="text-gray-400 text-sm font-sans">
+        © {currentYear} DOT Marketing. สงวนลิขสิทธิ์ทุกประการ.
+      </p>
+      <div class="flex items-center space-x-6 mt-4 md:mt-0">
+        <div class="hidden md:flex items-center space-x-2">
+          <div class="w-2 h-2 bg-primary-600 rounded-full"></div>
+          <div class="w-2 h-2 bg-primary-600 rounded-full opacity-60"></div>
+          <div class="w-2 h-2 bg-primary-600 rounded-full opacity-30"></div>
+        </div>
+        <a href="/privacy" class="text-gray-400 hover:text-primary-400 text-sm transition-colors font-sans">นโยบายความเป็นส่วนตัว</a>
+        <a href="/terms" class="text-gray-400 hover:text-primary-400 text-sm transition-colors font-sans">ข้อกำหนดการใช้งาน</a>
+      </div>
+    </div>
+  </div>
+</footer>

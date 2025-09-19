@@ -1,0 +1,198 @@
+---
+export interface Props {
+  title: string;
+  description?: string;
+  canonical?: string;
+  keywords?: string;
+  ogType?: string;
+  ogImage?: string;
+  schemaType?: string;
+}
+
+const { 
+  title, 
+  description = "ECHO Digital - สะท้อนความสำเร็จ | บริการ Sales Page Design, SEO, Digital Marketing ที่ได้ผลจริง",
+  canonical,
+  keywords = "Sales Page Design Thailand, SEO ราคาถูก, Digital Marketing ราคาดี, ออกแบบหน้าขาย, Content Marketing Thailand, ECHO Digital",
+  ogType = "website",
+  ogImage = "/og-image.jpg",
+  schemaType = "WebSite"
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="ECHO Digital" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    {canonical && <link rel="canonical" href={canonical} />}
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:url" content={canonical || Astro.url} />
+    <meta property="og:site_name" content="DOT Marketing" />
+    <meta property="og:locale" content="th_TH" />
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+    <meta name="twitter:site" content="@dotmarketingth" />
+    
+    <!-- Google Fonts - Thai -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600;700;800;900&family=Prompt:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    
+    <title>{title}</title>
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "ECHO Digital",
+      "alternateName": "ECHO Digital Agency",
+      "description": "สะท้อนความสำเร็จ - บริการ Sales Page Design, SEO, Digital Marketing ที่ได้ผลจริง",
+      "url": "https://echodigital.co.th",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://dotmarketing.co.th/logo.png"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+66-89-xxx-xxxx",
+        "contactType": "customer service",
+        "areaServed": "TH",
+        "availableLanguage": ["Thai", "English"]
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "TH",
+        "addressRegion": "Bangkok",
+        "addressLocality": "Bangkok"
+      },
+      "sameAs": [
+        "https://facebook.com/echodigitalagency",
+        "https://instagram.com/echodigitalagency",
+        "https://linkedin.com/company/echodigital"
+      ],
+      "foundingDate": "2024",
+      "numberOfEmployees": "5-10",
+      "slogan": "สะท้อนความสำเร็จ"
+    }
+    </script>
+  </head>
+  <body class="bg-white text-gray-900 font-sans">
+    <slot />
+  </body>
+</html>
+
+    <style is:global>
+      html {
+        font-family: 'Prompt', 'Inter', system-ui, sans-serif;
+      }
+      
+      h1, h2, h3, h4, h5, h6 {
+        font-family: 'Kanit', sans-serif;
+        font-weight: 500;
+      }
+      
+      .echo-heading {
+        font-family: 'Kanit', sans-serif;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+      }
+      
+      .echo-brand {
+        font-family: 'Kanit', sans-serif;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+      }
+      
+      .heading-gradient {
+        background: linear-gradient(135deg, #2563eb 0%, #1e40af 50%, #1e3a8a 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      
+      .echo-shadow {
+        text-shadow: 0 4px 8px rgba(37, 99, 235, 0.25);
+      }
+      
+      .wave-border {
+        border: 2px solid #2563eb;
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .wave-border::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(37, 99, 235, 0.1), transparent);
+        animation: wave 2s infinite;
+      }
+      
+      @keyframes wave {
+        0% { left: -100%; }
+        100% { left: 100%; }
+      }
+      
+      .echo-line {
+        height: 2px;
+        background: linear-gradient(90deg, transparent 0%, #2563eb 50%, transparent 100%);
+        margin: 2rem auto;
+        width: 100px;
+      }
+      
+      .circle-accent {
+        width: 10px;
+        height: 10px;
+        background: #2563eb;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 0 8px;
+        position: relative;
+      }
+      
+      .circle-accent::before {
+        content: '';
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        right: -5px;
+        bottom: -5px;
+        border: 1px solid #2563eb;
+        border-radius: 50%;
+        opacity: 0.3;
+      }
+      
+      .echo-circle {
+        border-radius: 50%;
+        background: radial-gradient(circle, #2563eb, #1e40af);
+      }
+      
+      .minimal-shadow {
+        box-shadow: 0 4px 20px rgba(37, 99, 235, 0.15);
+      }
+      
+      .echo-glow {
+        box-shadow: 0 0 20px rgba(37, 99, 235, 0.3);
+      }
+    </style>

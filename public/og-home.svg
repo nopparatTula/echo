@@ -1,0 +1,42 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#f8fafc"/>
+  
+  <!-- Background Pattern -->
+  <defs>
+    <pattern id="wave-pattern" x="0" y="0" width="120" height="60" patternUnits="userSpaceOnUse">
+      <path d="M0 30 Q30 0 60 30 Q90 60 120 30" stroke="#e2e8f0" stroke-width="1" fill="none" opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="url(#wave-pattern)"/>
+  
+  <!-- Main Content Area -->
+  <rect x="100" y="100" width="1000" height="430" rx="20" fill="white" opacity="0.95"/>
+  
+  <!-- Logo Area -->
+  <g transform="translate(150, 150)">
+    <!-- Echo Circles -->
+    <circle cx="40" cy="40" r="8" fill="#2563eb"/>
+    <circle cx="40" cy="40" r="16" fill="none" stroke="#2563eb" stroke-width="2" opacity="0.7"/>
+    <circle cx="40" cy="40" r="24" fill="none" stroke="#2563eb" stroke-width="1" opacity="0.4"/>
+    <circle cx="40" cy="40" r="32" fill="none" stroke="#2563eb" stroke-width="1" opacity="0.2"/>
+  </g>
+  
+  <!-- Brand Name -->
+  <text x="280" y="210" font-family="Kanit, sans-serif" font-size="72" font-weight="600" fill="#1e3a8a">ECHO</text>
+  <text x="280" y="270" font-family="Kanit, sans-serif" font-size="48" font-weight="400" fill="#2563eb">DIGITAL</text>
+  
+  <!-- Tagline -->
+  <text x="280" y="320" font-family="Prompt, sans-serif" font-size="24" fill="#64748b">สะท้อนความสำเร็จ</text>
+  
+  <!-- Service Highlights -->
+  <text x="280" y="380" font-family="Prompt, sans-serif" font-size="20" fill="#475569">Sales Page Design • SEO • Digital Marketing</text>
+  
+  <!-- Website URL -->
+  <text x="280" y="420" font-family="Prompt, sans-serif" font-size="18" fill="#06b6d4">echodigital.co.th</text>
+  
+  <!-- Decorative Elements -->
+  <circle cx="950" cy="200" r="60" fill="#2563eb" opacity="0.1"/>
+  <circle cx="1000" cy="350" r="40" fill="#06b6d4" opacity="0.15"/>
+  <path d="M850 400 Q900 380 950 400 Q1000 420 1050 400" stroke="#2563eb" stroke-width="2" fill="none" opacity="0.3"/>
+</svg>

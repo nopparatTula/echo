@@ -1,0 +1,84 @@
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f8fafc"/>
+  
+  <!-- Main Content Area -->
+  <rect x="50" y="50" width="500" height="300" rx="12" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+  
+  <!-- Header -->
+  <rect x="50" y="50" width="500" height="60" fill="#16a34a" rx="12"/>
+  <text x="300" y="75" font-family="Kanit, sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">วิธีทำ SEO ให้ติดอันดับ 1</text>
+  <text x="300" y="95" font-family="Prompt, sans-serif" font-size="14" fill="#bbf7d0" text-anchor="middle">ใน Google 2024</text>
+  
+  <!-- Google Search Simulation -->
+  <g transform="translate(80, 130)">
+    <!-- Search Bar -->
+    <rect x="0" y="0" width="440" height="40" rx="20" fill="#f8fafc" stroke="#d1d5db" stroke-width="2"/>
+    <text x="20" y="25" font-family="sans-serif" font-size="14" fill="#64748b">🔍 วิธีทำ SEO</text>
+    <rect x="400" y="10" width="30" height="20" rx="10" fill="#4285f4"/>
+    <text x="415" y="22" font-family="sans-serif" font-size="10" font-weight="bold" fill="white" text-anchor="middle">Search</text>
+    
+    <!-- Search Results -->
+    <g transform="translate(0, 60)">
+      <!-- Result 1 (Our site) -->
+      <rect x="0" y="0" width="440" height="50" fill="#f0fdf4" stroke="#16a34a" stroke-width="2" rx="8"/>
+      <text x="15" y="20" font-family="Prompt, sans-serif" font-size="12" font-weight="bold" fill="#16a34a">🥇 วิธีทำ SEO ให้ติดอันดับ 1 ใน Google 2024 - ECHO Digital</text>
+      <text x="15" y="35" font-family="Prompt, sans-serif" font-size="10" fill="#64748b">echodigital.co.th/blog/seo-guide-2024</text>
+      <text x="15" y="45" font-family="Prompt, sans-serif" font-size="9" fill="#16a34a">คู่มือ SEO ฉบับสมบูรณ์ ล่าสุด 2024 ทำตามแล้วติดอันดับแน่นอน...</text>
+      
+      <!-- Result 2 -->
+      <rect x="0" y="60" width="440" height="40" fill="#f8fafc" stroke="#e2e8f0" rx="8"/>
+      <text x="15" y="20" font-family="Prompt, sans-serif" font-size="12" fill="#1a73e8">2. SEO คืออะไร และทำอย่างไร | คู่มือ SEO</text>
+      <text x="15" y="30" font-family="Prompt, sans-serif" font-size="9" fill="#64748b">example.com</text>
+      <text x="15" y="40" font-family="Prompt, sans-serif" font-size="9" fill="#64748b">คู่มือ SEO พื้นฐาน สำหรับมือใหม่...</text>
+      
+      <!-- Result 3 -->
+      <rect x="0" y="110" width="440" height="40" fill="#f8fafc" stroke="#e2e8f0" rx="8"/>
+      <text x="15" y="20" font-family="Prompt, sans-serif" font-size="12" fill="#1a73e8">3. เทคนิค SEO 2024 ที่ใช้ได้จริง</text>
+      <text x="15" y="30" font-family="Prompt, sans-serif" font-size="9" fill="#64748b">competitor.com</text>
+      <text x="15" y="40" font-family="Prompt, sans-serif" font-size="9" fill="#64748b">เทคนิค SEO ล่าสุด...</text>
+    </g>
+  </g>
+  
+  <!-- SEO Factors -->
+  <g transform="translate(50, 300)">
+    <text x="20" y="15" font-family="Prompt, sans-serif" font-size="12" font-weight="bold" fill="#1f2937">ปัจจัยสำคัญ SEO 2024:</text>
+    
+    <!-- Factor 1 -->
+    <circle cx="30" cy="35" r="8" fill="#16a34a"/>
+    <text x="30" y="39" font-family="sans-serif" font-size="10" fill="white" text-anchor="middle">✓</text>
+    <text x="50" y="39" font-family="Prompt, sans-serif" font-size="10" fill="#64748b">E-E-A-T (Experience, Expertise, Authoritativeness, Trust)</text>
+    
+    <!-- Factor 2 -->
+    <circle cx="310" cy="35" r="8" fill="#2563eb"/>
+    <text x="310" y="39" font-family="sans-serif" font-size="10" fill="white" text-anchor="middle">✓</text>
+    <text x="330" y="39" font-family="Prompt, sans-serif" font-size="10" fill="#64748b">Core Web Vitals & Page Experience</text>
+  </g>
+  
+  <!-- Blog Info -->
+  <g transform="translate(80, 360)">
+    <circle cx="15" cy="10" r="12" fill="#16a34a"/>
+    <text x="15" y="15" font-family="sans-serif" font-size="12" fill="white" text-anchor="middle">S</text>
+    <text x="35" y="7" font-family="Prompt, sans-serif" font-size="12" font-weight="bold" fill="#1f2937">ECHO Digital SEO Guide</text>
+    <text x="35" y="20" font-family="Prompt, sans-serif" font-size="10" fill="#64748b">โดย นิน สุภาพร • SEO Specialist • 12 นาทีในการอ่าน</text>
+  </g>
+  
+  <!-- CTA -->
+  <g transform="translate(450, 350)">
+    <rect x="0" y="0" width="100" height="30" rx="15" fill="#16a34a"/>
+    <text x="50" y="18" font-family="Prompt, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">เรียนรู้เพิ่ม</text>
+  </g>
+  
+  <!-- Ranking Indicator -->
+  <g transform="translate(500, 130)">
+    <rect x="0" y="0" width="60" height="120" rx="8" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+    <text x="30" y="20" font-family="sans-serif" font-size="20" text-anchor="middle">📈</text>
+    <text x="30" y="40" font-family="Prompt, sans-serif" font-size="12" font-weight="bold" fill="#16a34a" text-anchor="middle">#1</text>
+    <text x="30" y="55" font-family="Prompt, sans-serif" font-size="9" fill="#059669" text-anchor="middle">Google</text>
+    <text x="30" y="67" font-family="Prompt, sans-serif" font-size="9" fill="#059669" text-anchor="middle">Ranking</text>
+    
+    <text x="30" y="85" font-family="Prompt, sans-serif" font-size="10" font-weight="bold" fill="#16a34a" text-anchor="middle">50+</text>
+    <text x="30" y="98" font-family="Prompt, sans-serif" font-size="8" fill="#059669" text-anchor="middle">Keywords</text>
+    <text x="30" y="108" font-family="Prompt, sans-serif" font-size="8" fill="#059669" text-anchor="middle">Top 3</text>
+  </g>
+</svg>

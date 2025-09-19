@@ -1,0 +1,536 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+
+// ข้อมูลตัวอย่างสำหรับ Portfolio
+const portfolioItems = [
+  {
+    id: 1,
+    title: "E-commerce Landing Page - Fashion Brand",
+    category: "Sales Page",
+    description: "ออกแบบ Landing Page สำหรับแบรนด์เสื้อผ้าออนไลน์ เพิ่มยอดขายได้ 350%",
+    image: "/images/portfolio/fashion-landing.jpg",
+    tags: ["Landing Page", "E-commerce", "Fashion"],
+    results: {
+      conversion: "+350%",
+      traffic: "+180%",
+      revenue: "+2.5M"
+    },
+    client: "FashionHub",
+    year: "2023",
+    link: "#"
+  },
+  {
+    id: 2,
+    title: "SEO Strategy - Technology Company",
+    category: "SEO",
+    description: "วางแผน SEO ครบวงจรสำหรับบริษัทเทคโนโลยี ทำให้ติดอันดับ 1 ใน 50+ keywords",
+    image: "/images/portfolio/tech-seo.jpg",
+    tags: ["SEO", "Technology", "B2B"],
+    results: {
+      ranking: "Top 3",
+      traffic: "+420%",
+      leads: "+280%"
+    },
+    client: "TechSolutions",
+    year: "2023",
+    link: "#"
+  },
+  {
+    id: 3,
+    title: "Content Marketing - Healthcare",
+    category: "Content Marketing",
+    description: "สร้างกลยุทธ์ Content Marketing สำหรับคลินิกความงาม เพิ่มการรับรู้แบรนด์",
+    image: "/images/portfolio/healthcare-content.jpg",
+    tags: ["Content", "Healthcare", "Social Media"],
+    results: {
+      engagement: "+450%",
+      followers: "+320%",
+      bookings: "+200%"
+    },
+    client: "Beauty Clinic",
+    year: "2023",
+    link: "#"
+  },
+  {
+    id: 4,
+    title: "Digital Campaign - Food Delivery",
+    category: "Digital Marketing",
+    description: "แคมเปญการตลาดดิจิทัลแบบครบวงจรสำหรับแอปส่งอาหาร",
+    image: "/images/portfolio/food-delivery.jpg",
+    tags: ["Digital Campaign", "Mobile App", "Food"],
+    results: {
+      downloads: "+500%",
+      orders: "+380%",
+      retention: "+150%"
+    },
+    client: "QuickEats",
+    year: "2023",
+    link: "#"
+  },
+  {
+    id: 5,
+    title: "Sales Funnel - Online Course",
+    category: "Sales Page",
+    description: "ออกแบบ Sales Funnel สำหรับคอร์สออนไลน์ ครอบคลุมตั้งแต่ Lead Magnet ถึง Upsell",
+    image: "/images/portfolio/course-funnel.jpg",
+    tags: ["Sales Funnel", "Education", "Online Course"],
+    results: {
+      conversion: "+280%",
+      ltr: "+400%",
+      revenue: "+1.8M"
+    },
+    client: "LearnHub",
+    year: "2024",
+    link: "#"
+  },
+  {
+    id: 6,
+    title: "Local SEO - Restaurant Chain",
+    category: "SEO",
+    description: "ปรับปรุง Local SEO สำหรับร้านอาหารเครือข่าย เพิ่มการค้นหาในพื้นที่",
+    image: "/images/portfolio/restaurant-seo.jpg",
+    tags: ["Local SEO", "Restaurant", "Multi-location"],
+    results: {
+      visibility: "+300%",
+      calls: "+250%",
+      footfall: "+180%"
+    },
+    client: "Thai Kitchen",
+    year: "2024",
+    link: "#"
+  }
+];
+
+const categories = [
+  { name: "ทั้งหมด", slug: "all" },
+  { name: "Sales Page", slug: "sales-page" },
+  { name: "SEO", slug: "seo" },
+  { name: "Content Marketing", slug: "content-marketing" },
+  { name: "Digital Marketing", slug: "digital-marketing" }
+];
+---
+
+<Layout 
+  title="Portfolio - DOT Marketing | ผลงานและเคสสตัดี Sales Page & SEO" 
+  description="ดูผลงาน Sales Page Design, SEO, Content Marketing ที่ช่วยลูกค้าเพิ่มยอดขาย 350% เคสสตัดีจริง"
+  keywords="Portfolio Digital Marketing, เคสสตัดี Sales Page, ผลงาน SEO Thailand, Case Study Digital Marketing"
+  canonical="https://dotmarketing.co.th/portfolio"
+  ogImage="https://dotmarketing.co.th/og-portfolio.jpg"
+>
+  <Navigation />
+  
+  <!-- Hero Section -->
+  <section class="bg-white py-32 relative overflow-hidden">
+    <!-- Background Dots -->
+    <div class="absolute top-0 left-0 w-full h-full opacity-5">
+      <div class="absolute top-16 left-16 w-8 h-8 bg-primary-600 rounded-full"></div>
+      <div class="absolute top-32 right-24 w-4 h-4 bg-primary-600 rounded-full"></div>
+      <div class="absolute bottom-20 left-1/3 w-6 h-6 bg-primary-600 rounded-full"></div>
+      <div class="absolute bottom-32 right-16 w-12 h-12 bg-primary-600 rounded-full"></div>
+    </div>
+    
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <div class="w-16 h-1 bg-primary-600 mb-8"></div>
+        <h1 class="text-5xl md:text-6xl font-heading font-bold text-secondary-900 mb-8 leading-tight">
+          ผลงานของเรา
+        </h1>
+        <p class="text-xl text-secondary-700 font-sans leading-relaxed mb-8">
+          เคสสตัดีและผลงานที่พิสูจน์ผลสำเร็จ<br>
+          จุดเริ่มต้นของความสำเร็จทุกโปรเจกต์
+        </p>
+        
+        <div class="flex items-center">
+          <div class="w-3 h-3 bg-primary-600 rounded-full mr-4"></div>
+          <div class="w-2 h-2 bg-primary-600 rounded-full mr-4 opacity-60"></div>
+          <div class="w-2 h-2 bg-primary-600 rounded-full opacity-30"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Category Filter -->
+  <section class="py-12 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-wrap justify-center gap-4">
+        {categories.map((category, index) => (
+          <button
+            class={`portfolio-filter px-8 py-3 rounded-full border-2 transition-all duration-300 hover:shadow-lg font-sans font-medium ${index === 0 ? 'active bg-primary-600 text-white border-primary-600 minimal-shadow' : 'border-secondary-300 text-secondary-700 hover:border-primary-600 hover:text-primary-600 bg-white'}`}
+            data-category={category.slug}
+          >
+            {category.name}
+          </button>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Grid -->
+  <section class="py-32 bg-white relative overflow-hidden">
+    <!-- Background Dots -->
+    <div class="absolute top-0 left-0 w-full h-full opacity-3">
+      <div class="absolute top-20 left-20 w-2 h-2 bg-primary-600 rounded-full"></div>
+      <div class="absolute top-40 right-32 w-4 h-4 bg-primary-600 rounded-full"></div>
+      <div class="absolute bottom-40 left-1/4 w-3 h-3 bg-primary-600 rounded-full"></div>
+      <div class="absolute bottom-20 right-20 w-6 h-6 bg-primary-600 rounded-full"></div>
+    </div>
+    
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div id="portfolio-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+        {portfolioItems.map((item) => (
+          <article 
+            class="portfolio-item bg-white rounded-3xl minimal-shadow hover:shadow-xl transition-all duration-500 overflow-hidden group relative"
+            data-category={item.category.toLowerCase().replace(/\s+/g, '-')}
+          >
+            <!-- Card Decoration -->
+            <div class="absolute top-6 right-6 w-8 h-8 bg-primary-50 rounded-full flex items-center justify-center opacity-20 group-hover:opacity-40 transition-opacity z-10">
+              <div class="w-3 h-3 bg-primary-600 rounded-full"></div>
+            </div>
+            <!-- Image -->
+            <div class="aspect-video bg-gradient-to-br from-primary-50 to-primary-100 relative overflow-hidden">
+              <!-- Geometric Pattern -->
+              <div class="absolute inset-0">
+                <div class="absolute top-4 left-4 w-16 h-16 bg-primary-600 rounded-full opacity-10"></div>
+                <div class="absolute bottom-4 right-4 w-8 h-8 bg-primary-600 rounded-full opacity-20"></div>
+                <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                  <div class="w-20 h-20 bg-primary-600 rounded-full flex items-center justify-center opacity-80">
+                    <div class="w-8 h-8 bg-white rounded-full"></div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="absolute inset-0 flex items-center justify-center">
+                <div class="text-center">
+                  <div class="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-3">
+                    <div class="w-6 h-6 bg-white rounded-full"></div>
+                  </div>
+                  <p class="text-sm text-secondary-600 font-sans">Project Preview</p>
+                </div>
+              </div>
+              
+              <!-- Overlay -->
+              <div class="absolute inset-0 bg-primary-600 bg-opacity-0 group-hover:bg-opacity-95 transition-all duration-500 flex items-center justify-center">
+                <div class="text-center opacity-0 group-hover:opacity-100 transition-opacity duration-500 transform translate-y-4 group-hover:translate-y-0">
+                  <button class="bg-white text-primary-600 px-8 py-3 rounded-full font-semibold font-heading hover:shadow-lg transition-all duration-300">
+                    ดูรายละเอียด
+                  </button>
+                </div>
+              </div>
+            </div>
+            
+            <div class="p-8">
+              <!-- Category & Year -->
+              <div class="flex items-center justify-between mb-4">
+                <span class="px-4 py-2 text-sm font-medium bg-primary-100 text-primary-700 rounded-full font-sans">
+                  {item.category}
+                </span>
+                <span class="text-sm text-secondary-500 font-sans">{item.year}</span>
+              </div>
+              
+              <!-- Title -->
+              <h3 class="text-2xl font-heading font-bold text-secondary-900 mb-4 leading-tight">
+                {item.title}
+              </h3>
+              
+              <!-- Description -->
+              <p class="text-secondary-700 mb-6 line-clamp-3 font-sans leading-relaxed">
+                {item.description}
+              </p>
+              
+              <!-- Results -->
+              <div class="grid grid-cols-3 gap-4 mb-6">
+                {Object.entries(item.results).map(([key, value]) => (
+                  <div class="text-center p-3 bg-primary-50 rounded-2xl">
+                    <div class="text-xl font-bold text-primary-600 font-heading">{value}</div>
+                    <div class="text-xs text-secondary-600 capitalize font-sans">{key}</div>
+                  </div>
+                ))}
+              </div>
+              
+              <!-- Tags -->
+              <div class="flex flex-wrap gap-2 mb-6">
+                {item.tags.slice(0, 3).map((tag) => (
+                  <span class="text-xs px-3 py-2 bg-secondary-100 text-secondary-700 rounded-full font-sans">
+                    {tag}
+                  </span>
+                ))}
+              </div>
+              
+              <!-- Client -->
+              <div class="flex items-center justify-between pt-4 border-t border-secondary-100">
+                <span class="text-sm text-secondary-600 font-sans">
+                  <span class="font-medium">Client:</span> {item.client}
+                </span>
+                <a 
+                  href={item.link} 
+                  class="inline-flex items-center text-primary-600 hover:text-primary-700 font-medium text-sm transition-colors font-sans"
+                >
+                  ดูเพิ่มเติม
+                  <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="py-32 bg-gray-50 relative overflow-hidden">
+    <!-- Background Dots -->
+    <div class="absolute top-0 left-0 w-full h-full opacity-3">
+      <div class="absolute top-16 left-16 w-6 h-6 bg-primary-600 rounded-full"></div>
+      <div class="absolute top-32 right-24 w-8 h-8 bg-primary-600 rounded-full"></div>
+      <div class="absolute bottom-20 left-1/3 w-4 h-4 bg-primary-600 rounded-full"></div>
+      <div class="absolute bottom-32 right-16 w-10 h-10 bg-primary-600 rounded-full"></div>
+    </div>
+    
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-20">
+        <div class="w-16 h-1 bg-primary-600 mx-auto mb-8"></div>
+        <h2 class="text-4xl md:text-5xl font-heading font-bold text-secondary-900 mb-6">
+          ผลลัพธ์ที่พิสูจน์ได้
+        </h2>
+        <p class="text-xl text-secondary-700 max-w-2xl mx-auto font-sans leading-relaxed">
+          ตัวเลขที่สะท้อนความสำเร็จของทุกโปรเจกต์
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-12">
+        <div class="text-center group">
+          <div class="w-24 h-24 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-6 minimal-shadow group-hover:shadow-xl transition-shadow">
+            <div class="w-8 h-8 bg-white rounded-full"></div>
+          </div>
+          <div class="text-4xl md:text-5xl font-bold text-primary-600 mb-3 font-heading">200+</div>
+          <div class="text-secondary-700 font-medium font-sans">โปรเจกต์สำเร็จ</div>
+        </div>
+        
+        <div class="text-center group">
+          <div class="w-24 h-24 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-6 minimal-shadow group-hover:shadow-xl transition-shadow">
+            <div class="w-10 h-10 bg-white rounded-full"></div>
+          </div>
+          <div class="text-4xl md:text-5xl font-bold text-primary-600 mb-3 font-heading">350%</div>
+          <div class="text-secondary-700 font-medium font-sans">เพิ่มยอดขายเฉลี่ย</div>
+        </div>
+        
+        <div class="text-center group">
+          <div class="w-24 h-24 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-6 minimal-shadow group-hover:shadow-xl transition-shadow">
+            <div class="w-12 h-12 bg-white rounded-full"></div>
+          </div>
+          <div class="text-4xl md:text-5xl font-bold text-primary-600 mb-3 font-heading">50M+</div>
+          <div class="text-secondary-700 font-medium font-sans">รายได้ที่เพิ่มขึ้น</div>
+        </div>
+        
+        <div class="text-center group">
+          <div class="w-24 h-24 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-6 minimal-shadow group-hover:shadow-xl transition-shadow">
+            <div class="w-6 h-6 bg-white rounded-full"></div>
+          </div>
+          <div class="text-4xl md:text-5xl font-bold text-primary-600 mb-3 font-heading">95%</div>
+          <div class="text-secondary-700 font-medium font-sans">ลูกค้าพอใจ</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Testimonials -->
+  <section class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="text-3xl md:text-4xl font-heading font-bold text-gray-900 mb-4">
+          ความคิดเห็นจากลูกค้า
+        </h2>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+          เสียงจากลูกค้าที่ได้รับประโยชน์จากการทำงานร่วมกับเรา
+        </p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white rounded-xl p-6 shadow-lg">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center mr-4">
+              <span class="text-white font-semibold">PK</span>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-900">ปกรณ์ สมใจ</h4>
+              <p class="text-sm text-gray-600">CEO, FashionHub</p>
+            </div>
+          </div>
+          <p class="text-gray-700 mb-4">
+            "ทีม SalesPage Pro ช่วยเราสร้าง Landing Page ที่เพิ่มยอดขายได้ 350% ภายในเพียง 3 เดือน 
+            การทำงานเป็นมืออาชีพมาก"
+          </p>
+          <div class="flex text-primary-600">
+            {Array.from({length: 5}).map((_, i) => (
+              <svg key={i} class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+              </svg>
+            ))}
+          </div>
+        </div>
+        
+        <div class="bg-white rounded-xl p-6 shadow-lg">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center mr-4">
+              <span class="text-white font-semibold">AN</span>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-900">อนันต์ ธุรกิจดี</h4>
+              <p class="text-sm text-gray-600">Marketing Director, TechSolutions</p>
+            </div>
+          </div>
+          <p class="text-gray-700 mb-4">
+            "SEO Strategy ที่วางให้ทำให้เราติดอันดับ 1 ใน Google ใน 50+ keywords 
+            Traffic เพิ่มขึ้น 420% และ Leads เพิ่ม 280%"
+          </p>
+          <div class="flex text-primary-600">
+            {Array.from({length: 5}).map((_, i) => (
+              <svg key={i} class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+              </svg>
+            ))}
+          </div>
+        </div>
+        
+        <div class="bg-white rounded-xl p-6 shadow-lg">
+          <div class="flex items-center mb-4">
+            <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center mr-4">
+              <span class="text-white font-semibold">NS</span>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-900">นิตยา สวยงาม</h4>
+              <p class="text-sm text-gray-600">Owner, Beauty Clinic</p>
+            </div>
+          </div>
+          <p class="text-gray-700 mb-4">
+            "Content Marketing Strategy ช่วยเพิ่ม Engagement 450% และการจองคิว 200% 
+            ลูกค้าใหม่เพิ่มขึ้นเรื่อยๆ"
+          </p>
+          <div class="flex text-primary-600">
+            {Array.from({length: 5}).map((_, i) => (
+              <svg key={i} class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+              </svg>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-32 bg-primary-600 relative overflow-hidden">
+    <!-- Background Dots -->
+    <div class="absolute top-0 left-0 w-full h-full opacity-10">
+      <div class="absolute top-16 left-16 w-12 h-12 bg-white rounded-full"></div>
+      <div class="absolute top-32 right-24 w-8 h-8 bg-white rounded-full"></div>
+      <div class="absolute bottom-20 left-1/3 w-16 h-16 bg-white rounded-full"></div>
+      <div class="absolute bottom-32 right-16 w-6 h-6 bg-white rounded-full"></div>
+    </div>
+    
+    <div class="relative max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+      <div class="w-16 h-1 bg-white mx-auto mb-8"></div>
+      <h2 class="text-4xl md:text-5xl font-heading font-bold text-white mb-8 leading-tight">
+        พร้อมสร้างผลงาน<br>
+        ที่โดดเด่นแล้วหรือยัง?
+      </h2>
+      <p class="text-xl text-primary-100 mb-12 font-sans leading-relaxed max-w-2xl mx-auto">
+        เริ่มต้นจุดใหม่กับเรา สร้างความสำเร็จที่เหนือความคาดหมาย<br>
+        ด้วยกลยุทธ์ที่เรียบง่ายแต่ได้ผลจริง
+      </p>
+      
+      <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
+        <a href="/contact" class="bg-white text-primary-600 px-10 py-4 rounded-full font-semibold text-lg minimal-shadow hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 inline-flex items-center font-heading">
+          เริ่มโปรเจกต์ใหม่
+          <svg class="w-5 h-5 ml-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+          </svg>
+        </a>
+        
+        <a href="/services" class="border-2 border-white text-white px-10 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-primary-600 transition-all duration-300 inline-flex items-center font-heading">
+          ดูบริการทั้งหมด
+        </a>
+      </div>
+      
+      <div class="flex items-center justify-center mt-12">
+        <div class="w-3 h-3 bg-white rounded-full mr-4"></div>
+        <div class="w-2 h-2 bg-white rounded-full mr-4 opacity-60"></div>
+        <div class="w-2 h-2 bg-white rounded-full opacity-30"></div>
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
+
+<style>
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .portfolio-filter.active {
+    background-color: #dc2626 !important;
+    color: white !important;
+    border-color: #dc2626 !important;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const portfolioFilters = document.querySelectorAll('.portfolio-filter');
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+    
+    portfolioFilters.forEach(filter => {
+      filter.addEventListener('click', function() {
+        const selectedCategory = this.dataset.category;
+        
+        // Update active state
+        portfolioFilters.forEach(f => f.classList.remove('active'));
+        this.classList.add('active');
+        
+        // Update button styles
+        portfolioFilters.forEach(f => {
+          f.classList.remove('bg-primary-600', 'text-white', 'border-primary-600');
+          f.classList.add('border-secondary-300', 'text-secondary-700', 'bg-white');
+        });
+        this.classList.remove('border-secondary-300', 'text-secondary-700', 'bg-white');
+        this.classList.add('bg-primary-600', 'text-white', 'border-primary-600');
+        
+        // Filter portfolio items
+        portfolioItems.forEach(item => {
+          const itemCategory = item.dataset.category;
+          
+          if (selectedCategory === 'all' || selectedCategory === itemCategory) {
+            item.style.display = 'block';
+            item.classList.remove('hidden');
+            
+            // Add animation
+            item.style.transform = 'scale(0.9)';
+            item.style.opacity = '0';
+            
+            setTimeout(() => {
+              item.style.transform = 'scale(1)';
+              item.style.opacity = '1';
+              item.style.transition = 'all 0.3s ease';
+            }, 100);
+          } else {
+            item.style.transform = 'scale(0.9)';
+            item.style.opacity = '0';
+            
+            setTimeout(() => {
+              item.style.display = 'none';
+              item.classList.add('hidden');
+            }, 300);
+          }
+        });
+      });
+    });
+  });
+</script>

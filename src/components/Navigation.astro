@@ -1,0 +1,103 @@
+---
+const navItems = [
+  { name: 'หน้าหลัก', href: '/' },
+  { name: 'บริการ', href: '/services' },
+  { name: 'Portfolio', href: '/portfolio' },
+  { name: 'Blog', href: '/blog' },
+  { name: 'เกี่ยวกับเรา', href: '/about' },
+  { name: 'ติดต่อ', href: '/contact' },
+];
+---
+
+<nav class="bg-white shadow-lg sticky top-0 z-50 border-b border-secondary-200">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-20">
+      <!-- Logo -->
+      <div class="flex-shrink-0">
+        <a href="/" class="flex items-center">
+          <div class="w-12 h-12 flex items-center justify-center relative">
+            <!-- Echo Waves -->
+            <div class="absolute w-12 h-12 border-2 border-primary-500 rounded-full opacity-30 animate-ping"></div>
+            <div class="absolute w-8 h-8 border-2 border-primary-600 rounded-full opacity-50"></div>
+            <div class="w-4 h-4 bg-primary-600 rounded-full echo-glow"></div>
+          </div>
+          <div class="ml-4">
+            <span class="text-2xl font-brand font-semibold text-primary-900 echo-brand">ECHO</span>
+            <div class="text-xs text-secondary-600 font-sans tracking-wider">สะท้อนความสำเร็จ</div>
+          </div>
+        </a>
+      </div>
+      
+      <!-- Desktop Navigation -->
+      <div class="hidden md:block">
+        <div class="ml-10 flex items-baseline space-x-8">
+          {navItems.map((item) => (
+            <a
+              href={item.href}
+              class="text-secondary-700 hover:text-primary-600 px-4 py-3 text-sm font-medium transition-all duration-300 relative group font-echo"
+            >
+              {item.name}
+              <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-600 transition-all duration-300 group-hover:w-full"></span>
+            </a>
+          ))}
+        </div>
+      </div>
+      
+      <!-- CTA Button -->
+      <div class="hidden md:block">
+        <a
+          href="/contact"
+          class="bg-primary-600 text-white px-8 py-3 rounded-full font-normal minimal-shadow hover:bg-primary-700 transition-all duration-300 font-echo text-sm tracking-wide echo-glow hover:shadow-xl"
+        >
+          เริ่มต้น
+        </a>
+      </div>
+      
+      <!-- Mobile menu button -->
+      <div class="md:hidden">
+        <button
+          type="button"
+          class="mobile-menu-button text-secondary-700 hover:text-primary-600 focus:outline-none focus:text-primary-600"
+          aria-label="Open menu"
+        >
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Mobile Navigation -->
+  <div class="mobile-menu hidden md:hidden">
+    <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-50">
+      {navItems.map((item) => (
+        <a
+          href={item.href}
+          class="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium"
+        >
+          {item.name}
+        </a>
+      ))}
+      <a
+        href="/contact"
+        class="bg-gradient-to-r from-blue-600 to-purple-600 text-white block px-3 py-2 rounded-md text-base font-medium text-center"
+      >
+        เริ่มโปรเจกต์
+      </a>
+    </div>
+  </div>
+</nav>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuButton = document.querySelector('.mobile-menu-button');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    
+    if (mobileMenuButton && mobileMenu) {
+      mobileMenuButton.addEventListener('click', function() {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+  });
+</script>

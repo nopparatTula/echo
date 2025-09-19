@@ -1,0 +1,110 @@
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f8fafc"/>
+  
+  <!-- Sales Funnel Diagram -->
+  <g transform="translate(50, 50)">
+    <!-- Funnel Shape -->
+    <path d="M50 0 L450 0 L400 80 L100 80 Z" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+    <path d="M100 80 L400 80 L350 160 L150 160 Z" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+    <path d="M150 160 L350 160 L300 240 L200 240 Z" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+    <path d="M200 240 L300 240 L275 300 L225 300 Z" fill="#fce7f3" stroke="#ec4899" stroke-width="2"/>
+    
+    <!-- Funnel Labels -->
+    <text x="250" y="35" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1f2937" text-anchor="middle">Lead Magnet</text>
+    <text x="250" y="50" font-family="sans-serif" font-size="10" fill="#64748b" text-anchor="middle">Free "Digital Marketing Guide"</text>
+    
+    <text x="250" y="115" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1f2937" text-anchor="middle">Landing Page</text>
+    <text x="250" y="130" font-family="sans-serif" font-size="10" fill="#64748b" text-anchor="middle">Course Introduction + Testimonials</text>
+    
+    <text x="250" y="195" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1f2937" text-anchor="middle">Main Course</text>
+    <text x="250" y="210" font-family="sans-serif" font-size="10" fill="#64748b" text-anchor="middle">Digital Marketing Mastery - 19,900฿</text>
+    
+    <text x="250" y="275" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1f2937" text-anchor="middle">Upsell</text>
+    <text x="250" y="290" font-family="sans-serif" font-size="10" fill="#64748b" text-anchor="middle">1-on-1 Coaching - 9,900฿</text>
+  </g>
+  
+  <!-- Email Sequence -->
+  <g transform="translate(520, 50)">
+    <text x="0" y="15" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1f2937">Email Sequence</text>
+    
+    <!-- Email 1 -->
+    <rect x="0" y="25" width="60" height="30" rx="4" fill="#dbeafe"/>
+    <text x="30" y="35" font-family="sans-serif" font-size="8" fill="#1f2937" text-anchor="middle">📧 Day 1</text>
+    <text x="30" y="45" font-family="sans-serif" font-size="7" fill="#64748b" text-anchor="middle">Welcome</text>
+    
+    <!-- Email 2 -->
+    <rect x="0" y="65" width="60" height="30" rx="4" fill="#dcfce7"/>
+    <text x="30" y="75" font-family="sans-serif" font-size="8" fill="#1f2937" text-anchor="middle">📧 Day 3</text>
+    <text x="30" y="85" font-family="sans-serif" font-size="7" fill="#64748b" text-anchor="middle">Case Study</text>
+    
+    <!-- Email 3 -->
+    <rect x="0" y="105" width="60" height="30" rx="4" fill="#fef3c7"/>
+    <text x="30" y="115" font-family="sans-serif" font-size="8" fill="#1f2937" text-anchor="middle">📧 Day 7</text>
+    <text x="30" y="125" font-family="sans-serif" font-size="7" fill="#64748b" text-anchor="middle">Course Pitch</text>
+    
+    <!-- Email 4 -->
+    <rect x="0" y="145" width="60" height="30" rx="4" fill="#fce7f3"/>
+    <text x="30" y="155" font-family="sans-serif" font-size="8" fill="#1f2937" text-anchor="middle">📧 Day 10</text>
+    <text x="30" y="165" font-family="sans-serif" font-size="7" fill="#64748b" text-anchor="middle">Last Chance</text>
+  </g>
+  
+  <!-- Course Landing Page Mockup -->
+  <g transform="translate(80, 200)">
+    <!-- Browser Frame -->
+    <rect x="0" y="0" width="400" height="150" rx="8" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+    
+    <!-- Header -->
+    <rect x="0" y="0" width="400" height="30" fill="#1e3a8a" rx="8"/>
+    <text x="200" y="20" font-family="sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">Digital Marketing Mastery</text>
+    
+    <!-- Hero Section -->
+    <rect x="20" y="40" width="160" height="80" fill="#fef3c7"/>
+    <text x="100" y="65" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1f2937" text-anchor="middle">Video Course</text>
+    <text x="100" y="80" font-family="sans-serif" font-size="10" fill="#64748b" text-anchor="middle">12 Modules</text>
+    <circle cx="100" cy="95" r="8" fill="#f59e0b"/>
+    <polygon points="96,91 104,95 96,99" fill="white"/>
+    
+    <!-- Course Info -->
+    <text x="200" y="55" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1f2937">สอนการทำ Digital Marketing</text>
+    <text x="200" y="70" font-family="sans-serif" font-size="10" fill="#64748b">✅ SEO Strategy</text>
+    <text x="200" y="85" font-family="sans-serif" font-size="10" fill="#64748b">✅ Social Media Marketing</text>
+    <text x="200" y="100" font-family="sans-serif" font-size="10" fill="#64748b">✅ Google Ads Mastery</text>
+    
+    <!-- Price & CTA -->
+    <rect x="300" y="50" width="80" height="70" fill="#2563eb" rx="8"/>
+    <text x="340" y="70" font-family="sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">19,900฿</text>
+    <text x="340" y="85" font-family="sans-serif" font-size="8" fill="#bfdbfe" text-anchor="middle">จาก 39,900฿</text>
+    <text x="340" y="105" font-family="sans-serif" font-size="9" font-weight="bold" fill="white" text-anchor="middle">สั่งซื้อเลย</text>
+  </g>
+  
+  <!-- Conversion Stats -->
+  <g transform="translate(100, 370)">
+    <rect x="0" y="0" width="400" height="25" rx="4" fill="#10b981" opacity="0.1"/>
+    <text x="20" y="15" font-family="sans-serif" font-size="11" font-weight="bold" fill="#10b981">Results: 2,500+ students enrolled, 35% conversion rate, 4.9/5 rating</text>
+  </g>
+  
+  <!-- Student Testimonials -->
+  <g transform="translate(500, 250)">
+    <rect x="0" y="0" width="90" height="100" rx="4" fill="white" stroke="#e2e8f0"/>
+    <text x="45" y="15" font-family="sans-serif" font-size="10" font-weight="bold" fill="#1f2937" text-anchor="middle">Testimonials</text>
+    
+    <!-- Review 1 -->
+    <text x="10" y="30" font-family="sans-serif" font-size="8" fill="#f59e0b">⭐⭐⭐⭐⭐</text>
+    <text x="10" y="42" font-family="sans-serif" font-size="7" fill="#64748b">"เข้าใจง่าย"</text>
+    <text x="10" y="52" font-family="sans-serif" font-size="7" fill="#64748b">- คุณนิดา</text>
+    
+    <!-- Review 2 -->
+    <text x="10" y="65" font-family="sans-serif" font-size="8" fill="#f59e0b">⭐⭐⭐⭐⭐</text>
+    <text x="10" y="77" font-family="sans-serif" font-size="7" fill="#64748b">"ได้ผลจริง"</text>
+    <text x="10" y="87" font-family="sans-serif" font-size="7" fill="#64748b">- คุณสมชาย</text>
+  </g>
+  
+  <!-- ECHO Digital watermark -->
+  <g transform="translate(520, 380)">
+    <circle cx="15" cy="10" r="3" fill="#2563eb" opacity="0.5"/>
+    <circle cx="15" cy="10" r="6" fill="none" stroke="#2563eb" stroke-width="1" opacity="0.3"/>
+    <text x="25" y="8" font-family="sans-serif" font-size="8" fill="#64748b">ECHO DIGITAL</text>
+    <text x="25" y="16" font-family="sans-serif" font-size="7" fill="#64748b">Sales Funnel</text>
+  </g>
+</svg>
