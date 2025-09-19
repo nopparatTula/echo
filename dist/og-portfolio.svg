@@ -1,0 +1,100 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#f8fafc"/>
+  
+  <!-- Background Gradient -->
+  <defs>
+    <linearGradient id="portfolio-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2563eb;stop-opacity:0.1"/>
+      <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:0.1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#portfolio-gradient)"/>
+  
+  <!-- Main Content Area -->
+  <rect x="80" y="80" width="1040" height="470" rx="20" fill="white" opacity="0.95"/>
+  
+  <!-- Header -->
+  <text x="120" y="150" font-family="Kanit, sans-serif" font-size="48" font-weight="600" fill="#1e3a8a">Portfolio</text>
+  <text x="120" y="190" font-family="Prompt, sans-serif" font-size="20" fill="#64748b">ผลงานที่สะท้อนความสำเร็จ</text>
+  
+  <!-- Portfolio Grid -->
+  <!-- Project 1 -->
+  <g transform="translate(120, 220)">
+    <rect width="180" height="120" rx="8" fill="#2563eb" opacity="0.1"/>
+    <rect x="15" y="15" width="150" height="60" rx="4" fill="#2563eb" opacity="0.2"/>
+    <text x="20" y="100" font-family="Kanit, sans-serif" font-size="14" font-weight="600" fill="#2563eb">Fashion Landing</text>
+    <text x="20" y="115" font-family="Prompt, sans-serif" font-size="11" fill="#64748b">+350% ยอดขาย</text>
+  </g>
+  
+  <!-- Project 2 -->
+  <g transform="translate(320, 220)">
+    <rect width="180" height="120" rx="8" fill="#06b6d4" opacity="0.1"/>
+    <rect x="15" y="15" width="150" height="60" rx="4" fill="#06b6d4" opacity="0.2"/>
+    <text x="20" y="100" font-family="Kanit, sans-serif" font-size="14" font-weight="600" fill="#06b6d4">Tech SEO</text>
+    <text x="20" y="115" font-family="Prompt, sans-serif" font-size="11" fill="#64748b">50+ Keywords #1</text>
+  </g>
+  
+  <!-- Project 3 -->
+  <g transform="translate(520, 220)">
+    <rect width="180" height="120" rx="8" fill="#2563eb" opacity="0.1"/>
+    <rect x="15" y="15" width="150" height="60" rx="4" fill="#2563eb" opacity="0.2"/>
+    <text x="20" y="100" font-family="Kanit, sans-serif" font-size="14" font-weight="600" fill="#2563eb">Healthcare Content</text>
+    <text x="20" y="115" font-family="Prompt, sans-serif" font-size="11" fill="#64748b">Brand Awareness</text>
+  </g>
+  
+  <!-- Project 4 -->
+  <g transform="translate(720, 220)">
+    <rect width="180" height="120" rx="8" fill="#06b6d4" opacity="0.1"/>
+    <rect x="15" y="15" width="150" height="60" rx="4" fill="#06b6d4" opacity="0.2"/>
+    <text x="20" y="100" font-family="Kanit, sans-serif" font-size="14" font-weight="600" fill="#06b6d4">Food Delivery App</text>
+    <text x="20" y="115" font-family="Prompt, sans-serif" font-size="11" fill="#64748b">Digital Campaign</text>
+  </g>
+  
+  <!-- Project 5 -->
+  <g transform="translate(120, 360)">
+    <rect width="180" height="120" rx="8" fill="#2563eb" opacity="0.1"/>
+    <rect x="15" y="15" width="150" height="60" rx="4" fill="#2563eb" opacity="0.2"/>
+    <text x="20" y="100" font-family="Kanit, sans-serif" font-size="14" font-weight="600" fill="#2563eb">Course Funnel</text>
+    <text x="20" y="115" font-family="Prompt, sans-serif" font-size="11" fill="#64738b">Sales Funnel</text>
+  </g>
+  
+  <!-- Project 6 -->
+  <g transform="translate(320, 360)">
+    <rect width="180" height="120" rx="8" fill="#06b6d4" opacity="0.1"/>
+    <rect x="15" y="15" width="150" height="60" rx="4" fill="#06b6d4" opacity="0.2"/>
+    <text x="20" y="100" font-family="Kanit, sans-serif" font-size="14" font-weight="600" fill="#06b6d4">Restaurant SEO</text>
+    <text x="20" y="115" font-family="Prompt, sans-serif" font-size="11" fill="#64748b">Local SEO</text>
+  </g>
+  
+  <!-- Stats Section -->
+  <g transform="translate(520, 360)">
+    <rect width="360" height="120" rx="12" fill="#1e3a8a"/>
+    
+    <!-- Stats -->
+    <text x="30" y="35" font-family="Kanit, sans-serif" font-size="24" font-weight="600" fill="white">100+</text>
+    <text x="30" y="55" font-family="Prompt, sans-serif" font-size="12" fill="#e2e8f0">โปรเจกต์สำเร็จ</text>
+    
+    <text x="130" y="35" font-family="Kanit, sans-serif" font-size="24" font-weight="600" fill="white">95%</text>
+    <text x="130" y="55" font-family="Prompt, sans-serif" font-size="12" fill="#e2e8f0">ลูกค้าพึงพอใจ</text>
+    
+    <text x="230" y="35" font-family="Kanit, sans-serif" font-size="24" font-weight="600" fill="white">500%</text>
+    <text x="230" y="55" font-family="Prompt, sans-serif" font-size="12" fill="#e2e8f0">เฉลี่ย ROI</text>
+    
+    <text x="180" y="85" font-family="Prompt, sans-serif" font-size="14" font-weight="500" fill="#06b6d4" text-anchor="middle">ดูผลงานทั้งหมด</text>
+    
+    <!-- Echo circles -->
+    <circle cx="320" cy="30" r="4" fill="#06b6d4"/>
+    <circle cx="320" cy="30" r="8" fill="none" stroke="#06b6d4" stroke-width="1" opacity="0.5"/>
+    <circle cx="320" cy="30" r="12" fill="none" stroke="#06b6d4" stroke-width="1" opacity="0.3"/>
+  </g>
+  
+  <!-- Logo -->
+  <g transform="translate(940, 480)">
+    <circle cx="25" cy="25" r="6" fill="#2563eb"/>
+    <circle cx="25" cy="25" r="12" fill="none" stroke="#2563eb" stroke-width="1" opacity="0.7"/>
+    <circle cx="25" cy="25" r="18" fill="none" stroke="#2563eb" stroke-width="1" opacity="0.4"/>
+    <text x="55" y="20" font-family="Kanit, sans-serif" font-size="16" font-weight="600" fill="#2563eb">ECHO</text>
+    <text x="55" y="35" font-family="Kanit, sans-serif" font-size="12" fill="#64748b">DIGITAL</text>
+  </g>
+</svg>

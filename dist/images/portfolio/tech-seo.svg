@@ -1,0 +1,89 @@
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f8fafc"/>
+  
+  <!-- Dashboard Frame -->
+  <rect x="50" y="50" width="500" height="300" rx="8" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+  
+  <!-- Header -->
+  <rect x="50" y="50" width="500" height="50" fill="#1e3a8a"/>
+  <text x="80" y="75" font-family="sans-serif" font-size="14" font-weight="bold" fill="white">SEO Analytics Dashboard</text>
+  <text x="80" y="90" font-family="sans-serif" font-size="10" fill="#bfdbfe">TechCompany.com</text>
+  
+  <!-- Search Results Visual -->
+  <g transform="translate(70, 120)">
+    <!-- Google-like search results -->
+    <rect x="0" y="0" width="460" height="30" fill="#f8fafc"/>
+    <text x="10" y="15" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1a73e8">TechCompany - Leading Software Solutions</text>
+    <text x="10" y="25" font-family="sans-serif" font-size="8" fill="#5f6368">techcompany.com</text>
+    
+    <rect x="0" y="40" width="460" height="30" fill="#f8fafc"/>
+    <text x="10" y="55" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1a73e8">Best Software Development Services - TechCompany</text>
+    <text x="10" y="65" font-family="sans-serif" font-size="8" fill="#5f6368">techcompany.com/services</text>
+    
+    <rect x="0" y="80" width="460" height="30" fill="#f8fafc"/>
+    <text x="10" y="95" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1a73e8">Custom Software Solutions | TechCompany</text>
+    <text x="10" y="105" font-family="sans-serif" font-size="8" fill="#5f6368">techcompany.com/custom-solutions</text>
+  </g>
+  
+  <!-- Ranking Chart -->
+  <g transform="translate(70, 240)">
+    <text x="0" y="15" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1f2937">Keyword Rankings</text>
+    
+    <!-- Chart bars -->
+    <rect x="0" y="25" width="80" height="15" fill="#10b981"/>
+    <text x="85" y="35" font-family="sans-serif" font-size="10" fill="#374751">"software development" #1</text>
+    
+    <rect x="0" y="45" width="75" height="15" fill="#10b981"/>
+    <text x="85" y="55" font-family="sans-serif" font-size="10" fill="#374751">"custom software" #1</text>
+    
+    <rect x="0" y="65" width="70" height="15" fill="#10b981"/>
+    <text x="85" y="75" font-family="sans-serif" font-size="10" fill="#374751">"tech solutions" #1</text>
+    
+    <rect x="0" y="85" width="85" height="15" fill="#f59e0b"/>
+    <text x="85" y="95" font-family="sans-serif" font-size="10" fill="#374751">"enterprise software" #2</text>
+    
+    <rect x="0" y="105" width="78" height="15" fill="#10b981"/>
+    <text x="85" y="115" font-family="sans-serif" font-size="10" fill="#374751">"software company" #1</text>
+  </g>
+  
+  <!-- Traffic Stats -->
+  <g transform="translate(320, 240)">
+    <text x="0" y="15" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1f2937">Organic Traffic</text>
+    
+    <!-- Graph line -->
+    <path d="M0 80 L20 70 L40 60 L60 45 L80 35 L100 25 L120 30" stroke="#2563eb" stroke-width="3" fill="none"/>
+    <path d="M0 80 L20 70 L40 60 L60 45 L80 35 L100 25 L120 30 L120 80 L0 80" fill="#2563eb" opacity="0.2"/>
+    
+    <!-- Data points -->
+    <circle cx="0" cy="80" r="3" fill="#2563eb"/>
+    <circle cx="20" cy="70" r="3" fill="#2563eb"/>
+    <circle cx="40" cy="60" r="3" fill="#2563eb"/>
+    <circle cx="60" cy="45" r="3" fill="#2563eb"/>
+    <circle cx="80" cy="35" r="3" fill="#2563eb"/>
+    <circle cx="100" cy="25" r="3" fill="#2563eb"/>
+    <circle cx="120" cy="30" r="3" fill="#2563eb"/>
+    
+    <!-- Stats -->
+    <text x="0" y="100" font-family="sans-serif" font-size="10" fill="#64748b">Jan</text>
+    <text x="100" y="100" font-family="sans-serif" font-size="10" fill="#64748b">Jul</text>
+    
+    <text x="0" y="120" font-family="sans-serif" font-size="12" font-weight="bold" fill="#10b981">+580% Traffic</text>
+    <text x="0" y="135" font-family="sans-serif" font-size="10" fill="#64748b">in 6 months</text>
+  </g>
+  
+  <!-- Success Badge -->
+  <g transform="translate(450, 360)">
+    <rect x="0" y="0" width="120" height="30" rx="4" fill="#2563eb" opacity="0.1"/>
+    <text x="10" y="15" font-family="sans-serif" font-size="10" font-weight="bold" fill="#2563eb">50+ Keywords #1</text>
+    <text x="10" y="25" font-family="sans-serif" font-size="8" fill="#1e40af">Google Rankings</text>
+  </g>
+  
+  <!-- ECHO Digital watermark -->
+  <g transform="translate(500, 320)">
+    <circle cx="15" cy="15" r="3" fill="#2563eb" opacity="0.5"/>
+    <circle cx="15" cy="15" r="6" fill="none" stroke="#2563eb" stroke-width="1" opacity="0.3"/>
+    <text x="25" y="12" font-family="sans-serif" font-size="8" fill="#64748b">ECHO</text>
+    <text x="25" y="20" font-family="sans-serif" font-size="8" fill="#64748b">DIGITAL</text>
+  </g>
+</svg>

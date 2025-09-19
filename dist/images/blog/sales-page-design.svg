@@ -1,0 +1,122 @@
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f8fafc"/>
+  
+  <!-- Main Content Area -->
+  <rect x="50" y="50" width="500" height="300" rx="12" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+  
+  <!-- Header -->
+  <rect x="50" y="50" width="500" height="60" fill="#7c3aed" rx="12"/>
+  <text x="300" y="75" font-family="Kanit, sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">ออกแบบ Sales Page</text>
+  <text x="300" y="95" font-family="Prompt, sans-serif" font-size="14" fill="#c4b5fd" text-anchor="middle">ที่แปลงยอดขายสูงสุด</text>
+  
+  <!-- Sales Page Layout Mockup -->
+  <g transform="translate(80, 130)">
+    <!-- Hero Section -->
+    <rect x="0" y="0" width="180" height="60" fill="#ede9fe" rx="8"/>
+    <text x="90" y="20" font-family="Prompt, sans-serif" font-size="11" font-weight="bold" fill="#7c3aed" text-anchor="middle">Hero Section</text>
+    <text x="90" y="35" font-family="Prompt, sans-serif" font-size="8" fill="#64748b" text-anchor="middle">Headline ที่ดึงดูด</text>
+    <text x="90" y="45" font-family="Prompt, sans-serif" font-size="8" fill="#64748b" text-anchor="middle">Value Proposition</text>
+    <text x="90" y="55" font-family="Prompt, sans-serif" font-size="8" fill="#64748b" text-anchor="middle">CTA Button</text>
+    
+    <!-- Benefits Section -->
+    <rect x="190" y="0" width="180" height="60" fill="#fef3c7" rx="8"/>
+    <text x="280" y="20" font-family="Prompt, sans-serif" font-size="11" font-weight="bold" fill="#d97706" text-anchor="middle">Benefits Section</text>
+    <text x="280" y="35" font-family="Prompt, sans-serif" font-size="8" fill="#64748b" text-anchor="middle">✅ ประโยชน์ที่ได้รับ</text>
+    <text x="280" y="45" font-family="Prompt, sans-serif" font-size="8" fill="#64748b" text-anchor="middle">✅ ปัญหาที่แก้ได้</text>
+    <text x="280" y="55" font-family="Prompt, sans-serif" font-size="8" fill="#64748b" text-anchor="middle">✅ ผลลัพธ์ที่คาดหวัง</text>
+    
+    <!-- Social Proof -->
+    <rect x="0" y="70" width="180" height="60" fill="#dcfce7" rx="8"/>
+    <text x="90" y="90" font-family="Prompt, sans-serif" font-size="11" font-weight="bold" fill="#16a34a" text-anchor="middle">Social Proof</text>
+    <text x="90" y="105" font-family="Prompt, sans-serif" font-size="8" fill="#64748b" text-anchor="middle">⭐⭐⭐⭐⭐ รีวิวลูกค้า</text>
+    <text x="90" y="115" font-family="Prompt, sans-serif" font-size="8" fill="#64748b" text-anchor="middle">Case Studies</text>
+    <text x="90" y="125" font-family="Prompt, sans-serif" font-size="8" fill="#64748b" text-anchor="middle">Testimonials</text>
+    
+    <!-- Pricing -->
+    <rect x="190" y="70" width="180" height="60" fill="#fce7f3" rx="8"/>
+    <text x="280" y="90" font-family="Prompt, sans-serif" font-size="11" font-weight="bold" fill="#be185d" text-anchor="middle">Pricing Section</text>
+    <text x="280" y="105" font-family="Prompt, sans-serif" font-size="8" fill="#64748b" text-anchor="middle">💰 ราคาที่คุ้มค่า</text>
+    <text x="280" y="115" font-family="Prompt, sans-serif" font-size="8" fill="#64748b" text-anchor="middle">🎯 Call-to-Action</text>
+    <text x="280" y="125" font-family="Prompt, sans-serif" font-size="8" fill="#64748b" text-anchor="middle">⏰ Limited Time Offer</text>
+  </g>
+  
+  <!-- Design Principles -->
+  <g transform="translate(400, 140)">
+    <text x="0" y="15" font-family="Prompt, sans-serif" font-size="12" font-weight="bold" fill="#1f2937">หลักการออกแบบ:</text>
+    
+    <!-- Principle 1 -->
+    <circle cx="10" cy="35" r="6" fill="#7c3aed"/>
+    <text x="10" y="38" font-family="sans-serif" font-size="8" fill="white" text-anchor="middle">1</text>
+    <text x="25" y="38" font-family="Prompt, sans-serif" font-size="9" fill="#64748b">AIDA Formula</text>
+    
+    <!-- Principle 2 -->
+    <circle cx="10" cy="55" r="6" fill="#f59e0b"/>
+    <text x="10" y="58" font-family="sans-serif" font-size="8" fill="white" text-anchor="middle">2</text>
+    <text x="25" y="58" font-family="Prompt, sans-serif" font-size="9" fill="#64748b">Above the Fold</text>
+    
+    <!-- Principle 3 -->
+    <circle cx="10" cy="75" r="6" fill="#16a34a"/>
+    <text x="10" y="78" font-family="sans-serif" font-size="8" fill="white" text-anchor="middle">3</text>
+    <text x="25" y="78" font-family="Prompt, sans-serif" font-size="9" fill="#64748b">Mobile Responsive</text>
+    
+    <!-- Principle 4 -->
+    <circle cx="10" cy="95" r="6" fill="#ef4444"/>
+    <text x="10" y="98" font-family="sans-serif" font-size="8" fill="white" text-anchor="middle">4</text>
+    <text x="25" y="98" font-family="Prompt, sans-serif" font-size="9" fill="#64748b">Fast Loading</text>
+  </g>
+  
+  <!-- Conversion Rate Comparison -->
+  <g transform="translate(80, 270)">
+    <text x="0" y="15" font-family="Prompt, sans-serif" font-size="12" font-weight="bold" fill="#1f2937">ผลลัพธ์การออกแบบใหม่:</text>
+    
+    <!-- Before -->
+    <rect x="0" y="25" width="120" height="40" fill="#fef2f2" stroke="#ef4444" stroke-width="2" rx="8"/>
+    <text x="60" y="40" font-family="Prompt, sans-serif" font-size="10" font-weight="bold" fill="#dc2626" text-anchor="middle">ก่อน: 1.8%</text>
+    <text x="60" y="55" font-family="Prompt, sans-serif" font-size="8" fill="#64748b" text-anchor="middle">Conversion Rate</text>
+    
+    <!-- Arrow -->
+    <text x="140" y="48" font-family="sans-serif" font-size="20" fill="#06b6d4">→</text>
+    
+    <!-- After -->
+    <rect x="170" y="25" width="120" height="40" fill="#f0fdf4" stroke="#16a34a" stroke-width="2" rx="8"/>
+    <text x="230" y="40" font-family="Prompt, sans-serif" font-size="10" font-weight="bold" fill="#16a34a" text-anchor="middle">หลัง: 6.2%</text>
+    <text x="230" y="55" font-family="Prompt, sans-serif" font-size="8" fill="#64748b" text-anchor="middle">Conversion Rate</text>
+    
+    <!-- Improvement -->
+    <rect x="310" y="25" width="80" height="40" fill="#ede9fe" rx="8"/>
+    <text x="350" y="40" font-family="Prompt, sans-serif" font-size="12" font-weight="bold" fill="#7c3aed" text-anchor="middle">+244%</text>
+    <text x="350" y="55" font-family="Prompt, sans-serif" font-size="8" fill="#64748b" text-anchor="middle">Improvement</text>
+  </g>
+  
+  <!-- Tools & Technologies -->
+  <g transform="translate(400, 250)">
+    <text x="0" y="15" font-family="Prompt, sans-serif" font-size="12" font-weight="bold" fill="#1f2937">เครื่องมือที่ใช้:</text>
+    
+    <rect x="0" y="25" width="60" height="20" rx="4" fill="#dbeafe"/>
+    <text x="30" y="37" font-family="Prompt, sans-serif" font-size="8" fill="#2563eb" text-anchor="middle">Figma</text>
+    
+    <rect x="70" y="25" width="60" height="20" rx="4" fill="#dcfce7"/>
+    <text x="100" y="37" font-family="Prompt, sans-serif" font-size="8" fill="#16a34a" text-anchor="middle">A/B Testing</text>
+    
+    <rect x="0" y="50" width="60" height="20" rx="4" fill="#fef3c7"/>
+    <text x="30" y="62" font-family="Prompt, sans-serif" font-size="8" fill="#d97706" text-anchor="middle">Hotjar</text>
+    
+    <rect x="70" y="50" width="60" height="20" rx="4" fill="#fce7f3"/>
+    <text x="100" y="62" font-family="Prompt, sans-serif" font-size="8" fill="#be185d" text-anchor="middle">Analytics</text>
+  </g>
+  
+  <!-- Blog Info -->
+  <g transform="translate(80, 330)">
+    <circle cx="15" cy="10" r="12" fill="#7c3aed"/>
+    <text x="15" y="15" font-family="sans-serif" font-size="12" fill="white" text-anchor="middle">D</text>
+    <text x="35" y="7" font-family="Prompt, sans-serif" font-size="12" font-weight="bold" fill="#1f2937">ECHO Digital Design</text>
+    <text x="35" y="20" font-family="Prompt, sans-serif" font-size="10" fill="#64748b">โดย อาร์ม กิตติศักดิ์ • Design Lead • 10 นาทีในการอ่าน</text>
+  </g>
+  
+  <!-- CTA -->
+  <g transform="translate(450, 320)">
+    <rect x="0" y="0" width="100" height="30" rx="15" fill="#7c3aed"/>
+    <text x="50" y="18" font-family="Prompt, sans-serif" font-size="11" font-weight="bold" fill="white" text-anchor="middle">ออกแบบเลย</text>
+  </g>
+</svg>

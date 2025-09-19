@@ -1,0 +1,117 @@
+<svg width="600" height="400" viewBox="0 0 600 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="400" fill="#f8fafc"/>
+  
+  <!-- Google My Business Profile -->
+  <g transform="translate(50, 50)">
+    <rect x="0" y="0" width="300" height="200" rx="8" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+    
+    <!-- GMB Header -->
+    <rect x="0" y="0" width="300" height="40" fill="#4285f4" rx="8"/>
+    <text x="150" y="25" font-family="sans-serif" font-size="14" font-weight="bold" fill="white" text-anchor="middle">Google My Business</text>
+    
+    <!-- Restaurant Info -->
+    <circle cx="50" cy="80" r="25" fill="#f59e0b"/>
+    <text x="50" y="85" font-family="sans-serif" font-size="16" fill="white" text-anchor="middle">🍽️</text>
+    
+    <text x="90" y="70" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1f2937">ร้านอาหารดีลิเชียส</text>
+    <text x="90" y="85" font-family="sans-serif" font-size="10" fill="#64748b">ร้านอาหารไทย • $$</text>
+    
+    <!-- Rating -->
+    <text x="90" y="100" font-family="sans-serif" font-size="12" fill="#f59e0b">⭐ 4.8</text>
+    <text x="130" y="100" font-family="sans-serif" font-size="10" fill="#64748b">(245 รีวิว)</text>
+    
+    <!-- Status -->
+    <rect x="20" y="120" width="80" height="20" rx="4" fill="#dcfce7"/>
+    <text x="60" y="132" font-family="sans-serif" font-size="9" font-weight="bold" fill="#16a34a" text-anchor="middle">เปิดอยู่</text>
+    
+    <!-- Contact Info -->
+    <text x="20" y="150" font-family="sans-serif" font-size="10" fill="#64748b">📍 ถ.สุขุมวิท กรุงเทพ</text>
+    <text x="20" y="165" font-family="sans-serif" font-size="10" fill="#64748b">📞 02-XXX-XXXX</text>
+    <text x="20" y="180" font-family="sans-serif" font-size="10" fill="#64748b">🕐 10:00-22:00 น.</text>
+    
+    <!-- Action Buttons -->
+    <rect x="200" y="120" width="80" height="25" rx="4" fill="#2563eb"/>
+    <text x="240" y="135" font-family="sans-serif" font-size="9" font-weight="bold" fill="white" text-anchor="middle">โทรเลย</text>
+    
+    <rect x="200" y="150" width="80" height="25" rx="4" fill="#16a34a"/>
+    <text x="240" y="165" font-family="sans-serif" font-size="9" font-weight="bold" fill="white" text-anchor="middle">นำทาง</text>
+  </g>
+  
+  <!-- Local Search Results -->
+  <g transform="translate(370, 50)">
+    <text x="0" y="15" font-family="sans-serif" font-size="12" font-weight="bold" fill="#1f2937">Local Search Results</text>
+    
+    <!-- Search Result 1 -->
+    <rect x="0" y="25" width="200" height="40" fill="#f0fdf4" stroke="#16a34a" stroke-width="1" rx="4"/>
+    <text x="10" y="38" font-family="sans-serif" font-size="10" font-weight="bold" fill="#16a34a">🥇 ร้านอาหารดีลิเชียส</text>
+    <text x="10" y="52" font-family="sans-serif" font-size="8" fill="#64748b">"ร้านอาหารไทย ใกล้ฉัน"</text>
+    
+    <!-- Search Result 2 -->
+    <rect x="0" y="75" width="200" height="40" fill="#f0fdf4" stroke="#16a34a" stroke-width="1" rx="4"/>
+    <text x="10" y="88" font-family="sans-serif" font-size="10" font-weight="bold" fill="#16a34a">🥇 ร้านอาหารดีลิเชียส</text>
+    <text x="10" y="102" font-family="sans-serif" font-size="8" fill="#64748b">"ร้านอาหาร สุขุมวิท"</text>
+    
+    <!-- Search Result 3 -->
+    <rect x="0" y="125" width="200" height="40" fill="#f0fdf4" stroke="#16a34a" stroke-width="1" rx="4"/>
+    <text x="10" y="138" font-family="sans-serif" font-size="10" font-weight="bold" fill="#16a34a">🥇 ร้านอาหารดีลิเชียส</text>
+    <text x="10" y="152" font-family="sans-serif" font-size="8" fill="#64748b">"อาหารไทย อร่อย"</text>
+    
+    <!-- Competitor -->
+    <rect x="0" y="175" width="200" height="40" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" rx="4"/>
+    <text x="10" y="188" font-family="sans-serif" font-size="10" fill="#64748b">2. ร้านอาหารคู่แข่ง</text>
+    <text x="10" y="202" font-family="sans-serif" font-size="8" fill="#9ca3af">"ร้านอาหารไทย ใกล้ฉัน"</text>
+  </g>
+  
+  <!-- Analytics Dashboard -->
+  <g transform="translate(50, 270)">
+    <rect x="0" y="0" width="520" height="100" rx="8" fill="white" stroke="#e2e8f0" stroke-width="2"/>
+    
+    <text x="20" y="25" font-family="sans-serif" font-size="14" font-weight="bold" fill="#1f2937">Local SEO Performance</text>
+    
+    <!-- Metrics -->
+    <g transform="translate(20, 40)">
+      <!-- Search Visibility -->
+      <rect x="0" y="0" width="120" height="50" fill="#dcfce7" rx="4"/>
+      <text x="60" y="20" font-family="sans-serif" font-size="18" font-weight="bold" fill="#16a34a" text-anchor="middle">+380%</text>
+      <text x="60" y="35" font-family="sans-serif" font-size="10" fill="#059669" text-anchor="middle">Search Visibility</text>
+      <text x="60" y="45" font-family="sans-serif" font-size="8" fill="#64748b" text-anchor="middle">6 months</text>
+      
+      <!-- Phone Calls -->
+      <rect x="130" y="0" width="120" height="50" fill="#dbeafe" rx="4"/>
+      <text x="190" y="20" font-family="sans-serif" font-size="18" font-weight="bold" fill="#2563eb" text-anchor="middle">+250%</text>
+      <text x="190" y="35" font-family="sans-serif" font-size="10" fill="#1d4ed8" text-anchor="middle">Phone Calls</text>
+      <text x="190" y="45" font-family="sans-serif" font-size="8" fill="#64748b" text-anchor="middle">from Google</text>
+      
+      <!-- Directions -->
+      <rect x="260" y="0" width="120" height="50" fill="#fef3c7" rx="4"/>
+      <text x="320" y="20" font-family="sans-serif" font-size="18" font-weight="bold" fill="#f59e0b" text-anchor="middle">+400%</text>
+      <text x="320" y="35" font-family="sans-serif" font-size="10" fill="#d97706" text-anchor="middle">Directions</text>
+      <text x="320" y="45" font-family="sans-serif" font-size="8" fill="#64748b" text-anchor="middle">Requests</text>
+      
+      <!-- Reviews -->
+      <rect x="390" y="0" width="120" height="50" fill="#fce7f3" rx="4"/>
+      <text x="450" y="20" font-family="sans-serif" font-size="18" font-weight="bold" fill="#ec4899" text-anchor="middle">4.8⭐</text>
+      <text x="450" y="35" font-family="sans-serif" font-size="10" fill="#be185d" text-anchor="middle">Average Rating</text>
+      <text x="450" y="45" font-family="sans-serif" font-size="8" fill="#64748b" text-anchor="middle">245 reviews</text>
+    </g>
+  </g>
+  
+  <!-- Location Map -->
+  <g transform="translate(500, 290)">
+    <rect x="0" y="0" width="80" height="80" fill="#dcfce7" stroke="#16a34a" stroke-width="2" rx="8"/>
+    <text x="40" y="25" font-family="sans-serif" font-size="12" fill="#16a34a" text-anchor="middle">📍</text>
+    <text x="40" y="40" font-family="sans-serif" font-size="8" font-weight="bold" fill="#16a34a" text-anchor="middle">สุขุมวิท</text>
+    <text x="40" y="52" font-family="sans-serif" font-size="7" fill="#059669" text-anchor="middle">5 สาขา</text>
+    <text x="40" y="62" font-family="sans-serif" font-size="7" fill="#059669" text-anchor="middle">ครอบคลุม</text>
+    <text x="40" y="72" font-family="sans-serif" font-size="7" fill="#059669" text-anchor="middle">ทั้งหมด</text>
+  </g>
+  
+  <!-- ECHO Digital watermark -->
+  <g transform="translate(500, 380)">
+    <circle cx="15" cy="10" r="3" fill="#2563eb" opacity="0.5"/>
+    <circle cx="15" cy="10" r="6" fill="none" stroke="#2563eb" stroke-width="1" opacity="0.3"/>
+    <text x="25" y="8" font-family="sans-serif" font-size="8" fill="#64748b">ECHO DIGITAL</text>
+    <text x="25" y="16" font-family="sans-serif" font-size="7" fill="#64748b">Local SEO</text>
+  </g>
+</svg>
